@@ -1,155 +1,62 @@
 "use client";
-
-import Link from "next/link";
 import { Logo } from "./Logo";
-import { useScrollAnimation } from "./useScrollAnimation";
-
-const faqs = [
-  {
-    q: "What is Pro Season Academy?",
-    a: "A private FC Mobile performance academy inside Onliversity. Not a public tips app or open chat group — a structured academy where invited players train under a chosen coach, reflect on real matches, and prove progress through structured scans.",
-  },
-  {
-    q: "How does Season One work?",
-    a: "Season One has 1,000 seats. Members enter through a controlled door, choose one permanent coach, complete a 5-match baseline assessment, and train through a 6-stage coaching journey. The first period is Founder's Week — free access while you help shape the academy.",
-  },
-  {
-    q: "Is there a cost?",
-    a: "Not during Founder's Week. You use the full academy for free, speak with the founder and community about features and pricing, and paid access begins openly after consultation. No surprise payments, no hidden walls.",
-  },
-  {
-    q: "What happens if my paid access lapses?",
-    a: "Nothing has been deleted. Your XP, journey, Match Vault, Loss Journal, and badges still belong to your story. There's a grace period and a human route to resolve payment issues. Talk to the founder.",
-  },
-  {
-    q: "How does the Match Vault work?",
-    a: "FC Mobile doesn't give us an official match data feed. We're honest about that. You log real matches manually — scoreline, composure, whether you used the taught mechanic. The value is making you notice patterns, not pretending to have impossible data.",
-  },
-  {
-    q: "Can I switch coaches?",
-    a: "No. Coach selection is a permanent lock. The commitment makes the relationship, journey language, and earned progress mean something. Choose carefully — both coaches lead different worlds.",
-  },
-];
-
-function FAQSection() {
-  return (
-    <div className="space-y-4">
-      {faqs.map((faq, i) => (
-        <details key={i} className="glass-card group overflow-hidden">
-          <summary className="flex cursor-pointer items-center justify-between p-5 text-sm font-medium text-foreground transition-colors hover:text-primary sm:p-6 sm:text-base">
-            {faq.q}
-            <svg
-              className="ml-4 h-4 w-4 flex-shrink-0 text-muted transition-transform group-open:rotate-180"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </summary>
-          <div className="px-5 pb-5 text-sm text-muted leading-relaxed sm:px-6 sm:pb-6">
-            {faq.a}
-          </div>
-        </details>
-      ))}
-    </div>
-  );
-}
+import { EmailCapture } from "./EmailCapture";
 
 export function Footer() {
-  const ref = useScrollAnimation();
-
   return (
-    <footer ref={ref} className="relative border-b border-border">
-      <div className="ambient-orb ambient-orb-green w-[400px] h-[400px] bottom-0 left-1/2 -translate-x-1/2 opacity-10" />
-
-      {/* FAQ Section */}
-      <div className="relative mx-auto max-w-3xl px-4 py-20 sm:px-6 sm:py-28">
-        <div className="text-center mb-10 fade-up">
-          <p className="mono-label mb-3">FAQ</p>
-          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            Frequently Asked Questions
-          </h2>
-        </div>
-        <div className="fade-up fade-up-delay-1">
-          <FAQSection />
-        </div>
-      </div>
-
-      {/* Founder's Week CTA */}
-      <div className="relative mx-auto max-w-3xl px-4 pb-16 sm:px-6 sm:pb-20 fade-up">
-        <div className="glass-card p-8 text-center sm:p-10">
-          <div className="mb-4 flex justify-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5">
-              <span className="h-2 w-2 rounded-full bg-accent pulse-dot" />
-              <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
-                Founder&apos;s Week — Active
-              </span>
-            </span>
-          </div>
-          <h3 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
-            Your seat is waiting.
-          </h3>
-          <p className="mt-3 text-sm text-muted max-w-md mx-auto">
-            1,000 seats. Free founder period. The founder is in the halls
-            listening. Pricing will be explained openly — no surprises.
-          </p>
-          <Link
-            href="/signup"
-            className="mt-6 inline-block shimmer rounded-lg bg-primary px-8 py-3.5 text-sm font-medium text-background transition-all hover:shadow-glow-sm"
-          >
-            Claim your free seat
-          </Link>
-        </div>
-      </div>
-
-      {/* Footer bottom */}
-      <div className="relative border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 py-12 text-center sm:px-6 sm:py-16">
-          <div className="transition-transform hover:scale-105">
-            <Logo size={32} />
-          </div>
-          <p className="max-w-sm text-sm text-muted">
-            A private FC Mobile performance academy. Serious coaching. Real
-            progress.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted">
-            <a href="#about" className="link-underline hover:text-foreground">
-              About
-            </a>
-            <a href="#journey" className="link-underline hover:text-foreground">
-              Journey
-            </a>
-            <a href="#features" className="link-underline hover:text-foreground">
-              Features
-            </a>
-            <a href="#pricing" className="link-underline hover:text-foreground">
-              Pricing
-            </a>
-            <a href="#vision" className="link-underline hover:text-foreground">
-              The Vision
-            </a>
-            <a href="#download" className="link-underline hover:text-foreground">
-              Download
-            </a>
+    <footer className="relative border-t border-border/60 bg-surface/30">
+      <div className="mx-auto max-w-[1200px] px-4 sm:px-6 py-14 sm:py-20">
+        <div className="grid lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-5">
+            <div className="flex items-center gap-2.5">
+              <Logo size={28} />
+              <span className="font-display font-bold">ONLIVERSITY</span>
+            </div>
+            <p className="mt-4 max-w-[360px] text-[13px] leading-[1.6] text-muted">
+              A real university for creatives. Starting with football. Pro Season Academy is a private FC Mobile performance academy — not a tips app.
+            </p>
+            <div className="mt-6">
+              <p className="font-mono text-[10px] uppercase tracking-widest text-muted mb-2">Get updates — email only</p>
+              <EmailCapture variant="footer" placeholder="your@email.com" />
+            </div>
           </div>
 
-          <div className="divider-glow w-full max-w-xs" />
+          <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-widest text-muted mb-4">Navigate</p>
+              <ul className="space-y-2.5 text-[13px] text-muted">
+                <li><a href="#story" className="hover:text-foreground">Our story</a></li>
+                <li><a href="#product" className="hover:text-foreground">Product</a></li>
+                <li><a href="#inside" className="hover:text-foreground">Inside</a></li>
+                <li><a href="#future" className="hover:text-foreground">Roadmap</a></li>
+                <li><a href="#updates" className="hover:text-foreground">Get updates</a></li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-widest text-muted mb-4">Product</p>
+              <ul className="space-y-2.5 text-[13px] text-muted">
+                <li>Pro Season Academy (Live)</li>
+                <li>Fire Royale (Building)</li>
+                <li>Creator Academy (Planned)</li>
+                <li>Code Academy (Planned)</li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-widest text-muted mb-4">Trust</p>
+              <ul className="space-y-2.5 text-[13px] text-muted">
+                <li>No fake data promise</li>
+                <li>Founder in The Halls</li>
+                <li>Permanent coach choice</li>
+                <li>Honor-system logging</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-          <p className="font-mono text-[10px] uppercase tracking-widest text-muted/60">
-            © {new Date().getFullYear()} Onliversity
-          </p>
-          <p className="max-w-md text-[10px] text-muted/40 leading-relaxed sm:text-[11px]">
-            Chinedu Okafor &amp; Obinna Eze are fictional coaches created for
-            Onliversity. The stages they walk are inspired by a real pro&apos;s
-            rise — reimagined through them. The learning system, coaching, and
-            certification are real.
+        <div className="mt-14 pt-8 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="font-mono text-[10px] uppercase tracking-widest text-muted/60">© {new Date().getFullYear()} Onliversity • Built for players who actually want to improve</p>
+          <p className="max-w-[520px] text-[10px] leading-relaxed text-muted/50 text-center sm:text-right">
+            Chinedu Okafor & Obinna Eze are fictional coaches inspired by a real pro rise — reimagined for coaching clarity. The learning system, certification, and academy structure are real. FC Mobile is a trademark of Electronic Arts.
           </p>
         </div>
       </div>

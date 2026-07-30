@@ -1,46 +1,26 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-// Space Grotesk: bold geometric sans for headers (Briefing Part 2.3)
-const displayFont = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["500", "700"],
-  variable: "--font-display",
-});
-
-// Inter: plain, readable body copy — structure carries the "university"
-// feeling, not decorative type.
-const bodyFont = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-body",
-});
-
-// JetBrains Mono: used only for stage numbers and small structural labels —
-// the gamified-but-serious feeling comes from restraint, not decoration.
-const monoFont = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["500"],
-  variable: "--font-mono",
-});
-
 export const metadata: Metadata = {
-  title: "Onliversity — The University for Creatives",
+  title: "Onliversity — The University Football Actually Needed",
   description:
-    "A real path. A real coach. A real certification. Starting with Esports.",
+    "Onliversity is a real academy system for creatives. Starting with FC Mobile. No fake gurus, no rank scams. Just structured 6-stage coaching from players who lived grassroots to pro. Get updates — email only.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="en"
-      className={`${displayFont.variable} ${bodyFont.variable} ${monoFont.variable}`}
-    >
+    <html lang="en" style={{ 
+      // @ts-ignore
+      "--font-display": "'Space Grotesk', system-ui, sans-serif",
+      "--font-body": "'Inter', system-ui, sans-serif",
+      "--font-mono": "'JetBrains Mono', monospace",
+    } as any}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        {/* Fallback system fonts if Google blocked — we load via link as progressive enhance */}
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+      </head>
       <body className="font-body antialiased">{children}</body>
     </html>
   );
