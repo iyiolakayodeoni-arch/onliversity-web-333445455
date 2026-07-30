@@ -37,6 +37,12 @@ export function About() {
               real — not fake scarcity. A seat gives you entry to a serious
               academy and direct founder proximity.
             </p>
+            <p>
+              Pro Season Academy is the <strong className="text-foreground">first academy</strong> inside
+              Onliversity. It&apos;s the foundation — the model that proves this works.
+              Music, content creation, software engineering, and more esports academies are all planned.
+              This is just the beginning.
+            </p>
           </div>
         </div>
 

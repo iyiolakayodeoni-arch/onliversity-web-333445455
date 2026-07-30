@@ -119,7 +119,7 @@ export function Footer() {
             progress.
           </p>
 
-          <div className="flex items-center gap-6 text-sm text-muted">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted">
             <a href="#about" className="link-underline hover:text-foreground">
               About
             </a>
@@ -131,6 +131,9 @@ export function Footer() {
             </a>
             <a href="#pricing" className="link-underline hover:text-foreground">
               Pricing
+            </a>
+            <a href="#vision" className="link-underline hover:text-foreground">
+              The Vision
             </a>
             <a href="#download" className="link-underline hover:text-foreground">
               Download

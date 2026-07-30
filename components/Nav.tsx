@@ -46,6 +46,12 @@ export function Nav() {
             Pricing
           </a>
           <a
+            href="#vision"
+            className="link-underline transition-colors hover:text-foreground"
+          >
+            The Vision
+          </a>
+          <a
             href="#download"
             className="link-underline transition-colors hover:text-foreground"
           >
@@ -132,6 +138,13 @@ export function Nav() {
             className="rounded-lg px-3 py-2.5 text-sm text-muted transition-colors hover:bg-surface hover:text-foreground"
           >
             Pricing
+          </a>
+          <a
+            href="#vision"
+            onClick={() => setMenuOpen(false)}
+            className="rounded-lg px-3 py-2.5 text-sm text-muted transition-colors hover:bg-surface hover:text-foreground"
+          >
+            The Vision
           </a>
           <a
             href="#download"
