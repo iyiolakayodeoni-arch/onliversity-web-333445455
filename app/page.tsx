@@ -1,24 +1,22 @@
 import { Nav } from "@/components/Nav";
-import { Hero } from "@/components/Hero";
-import { About } from "@/components/About";
-import { HowItWorks } from "@/components/HowItWorks";
-import { WhyDifferent } from "@/components/WhyDifferent";
-import { CoursesSection } from "@/components/CoursesSection";
-import { Vision } from "@/components/Vision";
-import { Pricing } from "@/components/Pricing";
+import { HeroNew } from "@/components/HeroNew";
+import { StorySection } from "@/components/StorySection";
+import { ProductSection } from "@/components/ProductSection";
+import { AcademyBento } from "@/components/AcademyBento";
+import { RoadmapSection } from "@/components/RoadmapSection";
+import { TrustSection } from "@/components/TrustSection";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-background">
       <Nav />
-      <Hero />
-      <About />
-      <HowItWorks />
-      <WhyDifferent />
-      <CoursesSection />
-      <Vision />
-      <Pricing />
+      <HeroNew />
+      <StorySection />
+      <ProductSection />
+      <AcademyBento />
+      <RoadmapSection />
+      <TrustSection />
       <Footer />
     </main>
   );
