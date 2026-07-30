@@ -103,6 +103,17 @@ function TechIcon() {
     </svg>
   );
 }
+function MusicIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="100%" height="100%" aria-hidden="true">
+      <circle cx="7" cy="17" r="3" fill="none" stroke={GREEN} strokeWidth="1.5" />
+      <circle cx="17" cy="15" r="3" fill="none" stroke={GREEN} strokeWidth="1.5" />
+      <line x1="10" y1="17" x2="10" y2="5" stroke={GREEN} strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="20" y1="15" x2="20" y2="3" stroke={GREEN} strokeWidth="1.5" strokeLinecap="round" />
+      <line x1="10" y1="5" x2="20" y2="3" stroke={GREEN} strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  );
+}
 
 /* ─── MAIN LOGO — restrained bloom, serious feel ─── */
 export function Logo({ size = 40, className = "" }: { size?: number; className?: string }) {
@@ -118,13 +129,14 @@ export function Logo({ size = 40, className = "" }: { size?: number; className?:
 }
 
 /* ── COURSE LOGO — same restrained mark + small green icon beneath ─── */
-export function CourseLogo({ course, size = 44, className = "" }: { course: "pro-season" | "fire-royale" | "duty-squad" | "content-creation" | "tech"; size?: number; className?: string }) {
+export function CourseLogo({ course, size = 44, className = "" }: { course: "pro-season" | "fire-royale" | "duty-squad" | "content-creation" | "tech" | "music"; size?: number; className?: "" }) {
   const icons: Record<string, ReactNode> = {
     "pro-season": <ProSeasonIcon />,
     "fire-royale": <FireRoyaleIcon />,
     "duty-squad": <DutySquadIcon />,
     "content-creation": <ContentCreationIcon />,
     "tech": <TechIcon />,
+    "music": <MusicIcon />,
   };
   return (
     <div className={`relative inline-flex items-center justify-center ${className}`} style={{ width: size, height: size }}>
@@ -181,4 +193,4 @@ export function LogoSplash({ size = 200 }: { size?: number }) {
   );
 }
 
-export { ProSeasonIcon as EsportsIcon, FireRoyaleIcon, DutySquadIcon, ContentCreationIcon as ContentIcon, TechIcon };
+export { ProSeasonIcon as EsportsIcon, FireRoyaleIcon, DutySquadIcon, ContentCreationIcon as ContentIcon, TechIcon, MusicIcon };

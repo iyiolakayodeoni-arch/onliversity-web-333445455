@@ -1,8 +1,5 @@
 import type { Config } from "tailwindcss";
 
-// Brand tokens from the Onliversity brand system (Briefing Part 2.2 / 2.3),
-// extended with a dimmer structural green and an elevated surface so the
-// palette can carry real hierarchy instead of one flat green-on-black.
 const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
@@ -33,6 +30,12 @@ const config: Config = {
       },
       backgroundSize: {
         grid: "48px 48px",
+      },
+      boxShadow: {
+        "glow-sm": "0 0 16px -4px rgba(57, 255, 106, 0.2)",
+        "glow-md": "0 0 24px -6px rgba(57, 255, 106, 0.25)",
+        "glow-lg": "0 0 40px -10px rgba(57, 255, 106, 0.15)",
+        "glow-amber": "0 0 24px -6px rgba(242, 192, 120, 0.2)",
       },
     },
   },

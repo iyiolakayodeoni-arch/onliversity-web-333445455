@@ -2,50 +2,64 @@
 
 import { useScrollAnimation } from "./useScrollAnimation";
 
-const rows = [
-  { theirs: "One curriculum for everyone", ours: "A path built from one real person's actual career" },
-  { theirs: "Grades and exams", ours: "Stages you actually clear, watched over as you go" },
-  { theirs: "A degree that says you attended", ours: "A certification that shows exactly how you developed" },
-  { theirs: "You graduate and you're on your own", ours: "You graduate, get certified, and can get paid to train the next wave" },
+const features = [
+  {
+    label: "Film Room",
+    desc: "Your coach leads a focused one-way session: the current mechanic, why it matters, practical steps, the coach's rule, and stage objectives. Like being coached — not reading an article.",
+  },
+  {
+    label: "Match Vault",
+    desc: "Log real FC Mobile matches: scoreline, mode, opponent style, composure, whether you used the taught mechanic. An honour-system record that makes you notice patterns.",
+  },
+  {
+    label: "Loss Journal",
+    desc: "One short line after a loss. Choose a cause — defending, finishing, composure, kickoff gap — add a note, and keep a record. The pattern you write is the pattern he fixes.",
+  },
+  {
+    label: "Match Scan",
+    desc: "Stage checkpoint combining your Vault evidence, the coached mechanic (The Eye), your composure and self-awareness (The Mind), and a coach reading. Pass = XP + badge + next stage.",
+  },
+  {
+    label: "Community / The Halls",
+    desc: "Academy rooms to celebrate wins, discuss losses, share progress. The founder is visible and responsive. Not an uncontrolled public social network.",
+  },
+  {
+    label: "Founder Contact",
+    desc: "A private line to the founder for questions, suggestions, bugs, support, or payment issues. A real line to a real person — not a fake chatbot ticket queue.",
+  },
 ];
 
 export function WhyDifferent() {
   const ref = useScrollAnimation();
 
   return (
-    <section ref={ref} className="border-b border-border">
-      <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20 md:py-24">
-        <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-primary fade-up sm:text-xs">
-          Being honest about it
-        </p>
-        <h2 className="mt-3 font-display text-2xl font-bold tracking-tight sm:text-3xl md:text-4xl fade-up fade-up-delay-1">
-          How this is actually different
-          <br className="hidden md:block" /> from traditional education.
-        </h2>
+    <section ref={ref} id="features" className="relative border-b border-border">
+      <div className="ambient-orb ambient-orb-green w-[300px] h-[300px] top-1/3 -left-20 opacity-15" />
 
-        {/* Desktop: table */}
-        <div className="mt-10 hidden overflow-hidden rounded border border-border md:block fade-up fade-up-delay-2">
-          <div className="grid grid-cols-2 border-b border-border bg-surface">
-            <div className="px-6 py-4 font-mono text-xs uppercase tracking-widest text-muted">Traditional education</div>
-            <div className="px-6 py-4 font-mono text-xs uppercase tracking-widest text-primary">Onliversity</div>
-          </div>
-          {rows.map((row, i) => (
-            <div key={i} className={`grid grid-cols-2 transition-colors hover:bg-surface/50 ${i !== rows.length - 1 ? "border-b border-border" : ""}`}>
-              <div className="px-6 py-5 text-sm text-muted">{row.theirs}</div>
-              <div className="px-6 py-5 text-sm text-foreground">{row.ours}</div>
-            </div>
-          ))}
+      <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 md:py-32">
+        <div className="text-center mb-12 fade-up">
+          <p className="mono-label mb-3">Inside the academy</p>
+          <h2 className="font-display text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            What you do inside.
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base text-muted sm:text-lg">
+            Every feature exists to make you better at FC Mobile — not to fill
+            a screen with content.
+          </p>
         </div>
 
-        {/* Mobile: stacked cards */}
-        <div className="mt-8 space-y-3 md:hidden fade-up fade-up-delay-2">
-          {rows.map((row, i) => (
-            <div key={i} className="rounded border border-border bg-surface/30 p-4 transition-colors hover:bg-surface/50">
-              <p className="font-mono text-[9px] uppercase tracking-widest text-muted">Traditional</p>
-              <p className="mt-1 text-sm text-muted">{row.theirs}</p>
-              <div className="my-3 h-px bg-border" />
-              <p className="font-mono text-[9px] uppercase tracking-widest text-primary">Onliversity</p>
-              <p className="mt-1 text-sm text-foreground">{row.ours}</p>
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {features.map((f, i) => (
+            <div
+              key={f.label}
+              className={`glass-card p-6 fade-up fade-up-delay-${Math.min(i + 1, 4)}`}
+            >
+              <h3 className="font-display text-base font-bold text-foreground">
+                {f.label}
+              </h3>
+              <p className="mt-3 text-sm text-muted leading-relaxed">
+                {f.desc}
+              </p>
             </div>
           ))}
         </div>
