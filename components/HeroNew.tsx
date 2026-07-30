@@ -131,20 +131,18 @@ export function HeroNew() {
             </div>
 
             <h1 className="fade-up fade-up-delay-1 font-display font-bold tracking-tight text-[40px] sm:text-[54px] lg:text-[64px] leading-[0.9]">
-              The university
+              The Structure
               <br />
-              <span className="text-muted">football actually</span>
+              <span className="text-muted">Esports</span>
               <br />
               <span className="relative inline-block">
-                <span className="relative z-10 text-primary">needed.</span>
+                <span className="relative z-10 text-primary">Need.</span>
                 <span className="absolute bottom-1 left-0 right-0 h-[10px] bg-primary/20 -rotate-1" />
               </span>
             </h1>
 
             <p className="fade-up fade-up-delay-2 mt-6 max-w-[560px] text-[15px] sm:text-[17px] leading-[1.6] text-muted">
-              <strong className="text-foreground font-medium">Onliversity</strong> is a real academy system for creatives. We start with <strong className="text-foreground">FC Mobile</strong> — not random YouTube tricks, but a structured 6-stage journey coached by players who lived grassroots to pro.
-              <br className="hidden sm:block" />
-              <span className="mt-2 inline-block text-foreground/80 text-[14px]">No fake promises. No rank boost scams. Just film, reflection, and proof you&apos;re improving.</span>
+              A structured 6-stage esports academy for FC Mobile. Real coaches. Real journeys. Real progress tracking.
             </p>
 
             <div className="fade-up fade-up-delay-3 mt-8 max-w-[480px]">
