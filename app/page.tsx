@@ -4,6 +4,7 @@ import { About } from "@/components/About";
 import { HowItWorks } from "@/components/HowItWorks";
 import { WhyDifferent } from "@/components/WhyDifferent";
 import { CoursesSection } from "@/components/CoursesSection";
+import { Pricing } from "@/components/Pricing";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <HowItWorks />
       <WhyDifferent />
       <CoursesSection />
+      <Pricing />
       <Footer />
     </main>
   );
