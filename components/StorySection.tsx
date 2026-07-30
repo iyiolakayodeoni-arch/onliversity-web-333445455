@@ -19,7 +19,7 @@ export function StorySection() {
               <div className="mt-8 rounded-2xl border border-border bg-surface p-4 flex gap-3">
                 <div className="h-10 w-10 rounded-full bg-primary/15 border border-primary/20 grid place-items-center text-primary font-bold">KO</div>
                 <div>
-                  <p className="text-sm font-medium">Kayode • Founder</p>
+                  <p className="text-sm font-medium">Founder</p>
                   <p className="text-[12px] text-muted leading-snug mt-1">“I was tired of watching talented players quit because coaching was either fake, too expensive, or not built for mobile.”</p>
                 </div>
               </div>
