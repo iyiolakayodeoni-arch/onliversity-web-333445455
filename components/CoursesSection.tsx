@@ -107,6 +107,26 @@ export function CoursesSection() {
               The app is currently in Founder&apos;s Week. Sign up to secure your
               seat and get notified when the app is available for download.
             </p>
+
+            <Link
+              href="/pro-season-academy"
+              className="mt-4 inline-flex items-center gap-2 font-mono text-xs text-primary hover:underline"
+            >
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                />
+              </svg>
+              View full app page &amp; changelog →
+            </Link>
           </div>
 
           {/* Right: App preview terminal */}
