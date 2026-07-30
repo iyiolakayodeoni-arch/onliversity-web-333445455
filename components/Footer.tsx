@@ -6,24 +6,28 @@ import { useScrollAnimation } from "./useScrollAnimation";
 
 const faqs = [
   {
-    q: "What is Onliversity?",
-    a: "Onliversity is a digital university for creatives. We take real pro careers — their actual journeys from grassroots to championship — and turn them into structured paths you can walk. Stage by stage, with real coaching at every step.",
+    q: "What is Pro Season Academy?",
+    a: "A private FC Mobile performance academy inside Onliversity. Not a public tips app or open chat group — a structured academy where invited players train under a chosen coach, reflect on real matches, and prove progress through structured scans.",
   },
   {
-    q: "How does the coach system work?",
-    a: "After your 5 placement matches, you choose between two coaches. Each coach is based on a real pro's career. You walk their exact journey — 6 stages from grassroots to the top — with AI-powered coaching moments drawn from their actual experience.",
+    q: "How does Season One work?",
+    a: "Season One has 1,000 seats. Members enter through a controlled door, choose one permanent coach, complete a 5-match baseline assessment, and train through a 6-stage coaching journey. The first period is Founder's Week — free access while you help shape the academy.",
   },
   {
-    q: "Is the certification real?",
-    a: "Yes. When you complete all 6 stages, you receive a dated, verifiable certification from Onliversity. It records exactly how you developed — not just that you showed up.",
+    q: "Is there a cost?",
+    a: "Not during Founder's Week. You use the full academy for free, speak with the founder and community about features and pricing, and paid access begins openly after consultation. No surprise payments, no hidden walls.",
   },
   {
-    q: "How does the 80/20 partnership work?",
-    a: "After certification, you can apply to become an Onliversity coach. You train the next generation of learners under the Onliversity name and keep 80% of every session fee.",
+    q: "What happens if my paid access lapses?",
+    a: "Nothing has been deleted. Your XP, journey, Match Vault, Loss Journal, and badges still belong to your story. There's a grace period and a human route to resolve payment issues. Talk to the founder.",
   },
   {
-    q: "Which games are supported?",
-    a: "We're starting with Esports — FC Mobile, Free Fire, and Call of Duty are first. Content Creation and Tech academies are planned for later. The model works for any career with a clear progression path.",
+    q: "How does the Match Vault work?",
+    a: "FC Mobile doesn't give us an official match data feed. We're honest about that. You log real matches manually — scoreline, composure, whether you used the taught mechanic. The value is making you notice patterns, not pretending to have impossible data.",
+  },
+  {
+    q: "Can I switch coaches?",
+    a: "No. Coach selection is a permanent lock. The commitment makes the relationship, journey language, and earned progress mean something. Choose carefully — both coaches lead different worlds.",
   },
 ];
 
@@ -31,10 +35,7 @@ function FAQSection() {
   return (
     <div className="space-y-4">
       {faqs.map((faq, i) => (
-        <details
-          key={i}
-          className="glass-card group overflow-hidden"
-        >
+        <details key={i} className="glass-card group overflow-hidden">
           <summary className="flex cursor-pointer items-center justify-between p-5 text-sm font-medium text-foreground transition-colors hover:text-primary sm:p-6 sm:text-base">
             {faq.q}
             <svg
@@ -60,31 +61,6 @@ function FAQSection() {
   );
 }
 
-function Newsletter() {
-  return (
-    <div className="glass-card p-8 text-center sm:p-10">
-      <p className="mono-label mb-3">Newsletter</p>
-      <h3 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
-        Stay in the loop
-      </h3>
-      <p className="mt-3 text-sm text-muted sm:text-base">
-        Weekly insights on esports coaching, new academy launches, and platform
-        updates.
-      </p>
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:max-w-md sm:mx-auto">
-        <input
-          type="email"
-          placeholder="your@email.com"
-          className="input-glass flex-1"
-        />
-        <button className="shimmer rounded-lg bg-primary px-6 py-3 text-sm font-medium text-background transition-all hover:shadow-glow-sm">
-          Subscribe
-        </button>
-      </div>
-    </div>
-  );
-}
-
 export function Footer() {
   const ref = useScrollAnimation();
 
@@ -105,9 +81,31 @@ export function Footer() {
         </div>
       </div>
 
-      {/* Newsletter */}
+      {/* Founder's Week CTA */}
       <div className="relative mx-auto max-w-3xl px-4 pb-16 sm:px-6 sm:pb-20 fade-up">
-        <Newsletter />
+        <div className="glass-card p-8 text-center sm:p-10">
+          <div className="mb-4 flex justify-center">
+            <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5">
+              <span className="h-2 w-2 rounded-full bg-accent pulse-dot" />
+              <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
+                Founder&apos;s Week — Active
+              </span>
+            </span>
+          </div>
+          <h3 className="font-display text-2xl font-bold text-foreground sm:text-3xl">
+            Your seat is waiting.
+          </h3>
+          <p className="mt-3 text-sm text-muted max-w-md mx-auto">
+            1,000 seats. Free founder period. The founder is in the halls
+            listening. Pricing will be explained openly — no surprises.
+          </p>
+          <Link
+            href="/signup"
+            className="mt-6 inline-block shimmer rounded-lg bg-primary px-8 py-3.5 text-sm font-medium text-background transition-all hover:shadow-glow-sm"
+          >
+            Claim your free seat
+          </Link>
+        </div>
       </div>
 
       {/* Footer bottom */}
@@ -117,30 +115,25 @@ export function Footer() {
             <Logo size={32} />
           </div>
           <p className="max-w-sm text-sm text-muted">
-            Walk a real pro&apos;s path. Stage by stage. Certified at the end.
+            A private FC Mobile performance academy. Serious coaching. Real
+            progress.
           </p>
-          <Link
-            href="/signup"
-            className="shimmer rounded-lg bg-primary px-6 py-3 text-sm font-medium text-background transition-all hover:shadow-glow-sm"
-          >
-            Start your journey
-          </Link>
 
           <div className="flex items-center gap-6 text-sm text-muted">
             <a href="#about" className="link-underline hover:text-foreground">
               About
             </a>
-            <a
-              href="#how-it-works"
-              className="link-underline hover:text-foreground"
-            >
-              How it works
+            <a href="#journey" className="link-underline hover:text-foreground">
+              Journey
             </a>
-            <a href="#courses" className="link-underline hover:text-foreground">
-              Courses
+            <a href="#features" className="link-underline hover:text-foreground">
+              Features
             </a>
             <a href="#pricing" className="link-underline hover:text-foreground">
               Pricing
+            </a>
+            <a href="#download" className="link-underline hover:text-foreground">
+              Download
             </a>
           </div>
 
@@ -150,9 +143,10 @@ export function Footer() {
             © {new Date().getFullYear()} Onliversity
           </p>
           <p className="max-w-md text-[10px] text-muted/40 leading-relaxed sm:text-[11px]">
-            Chinedu Okafor &amp; Obinna Eze are fictional. The journey they
-            walk is inspired by a real pro&apos;s rise — reimagined through
-            them. The learning system, coaching, and certification are real.
+            Chinedu Okafor &amp; Obinna Eze are fictional coaches created for
+            Onliversity. The stages they walk are inspired by a real pro&apos;s
+            rise — reimagined through them. The learning system, coaching, and
+            certification are real.
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Logo } from "./Logo";
 import { useScrollAnimation } from "./useScrollAnimation";
 
-function JourneyTerminal() {
+function AppTerminal() {
   return (
     <div className="terminal-window w-full max-w-lg">
       <div className="terminal-header">
@@ -12,29 +12,42 @@ function JourneyTerminal() {
         <div className="terminal-dot" style={{ background: "#febc2e" }} />
         <div className="terminal-dot" style={{ background: "#28c840" }} />
         <span className="ml-2 font-mono text-[10px] text-muted/50">
-          journey — onliversity
+          pro-season-academy — onliversity
         </span>
       </div>
       <div className="terminal-body space-y-2">
         <div className="flex items-center gap-2">
           <span className="text-primary/60">$</span>
-          <span className="text-muted">onliversity start --coach chinedu</span>
+          <span className="text-muted">onliversity open pro-season-academy</span>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-primary">✓</span>
-          <span className="text-foreground/70">Coach assigned: <span className="text-primary font-medium">Chinedu &ldquo;King of the Pitch&rdquo; Okafor</span></span>
+          <span className="text-foreground/70">
+            Academy loaded: <span className="text-primary font-medium">Pro Season Academy</span>
+          </span>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-primary">✓</span>
-          <span className="text-foreground/70">Journey loaded: <span className="text-foreground">6 stages mapped</span></span>
+          <span className="text-foreground/70">
+            Season One: <span className="text-accent font-medium">1,000 seats — open</span>
+          </span>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-primary">✓</span>
-          <span className="text-foreground/70">Stage 1 unlocked: <span className="text-accent">Grassroots — &ldquo;Just Playing&rdquo;</span></span>
+          <span className="text-foreground/70">
+            Status: <span className="text-primary">Founder&apos;s Week — free access</span>
+          </span>
         </div>
+        <div className="flex items-center gap-2">
+          <span className="text-primary">✓</span>
+          <span className="text-foreground/70">
+            Coaches: <span className="text-foreground">Chinedu &ldquo;The King&rdquo; · Obinna &ldquo;Tekkerz&rdquo;</span>
+          </span>
+        </div>
+        <div className="divider-glow my-2" />
         <div className="flex items-center gap-2">
           <span className="text-primary/60">$</span>
-          <span className="text-muted/70">Your journey is live</span>
+          <span className="text-muted/70">Your seat is waiting</span>
           <span className="inline-block h-3 w-1.5 bg-primary cursor-blink" />
         </div>
       </div>
@@ -68,22 +81,37 @@ export function Hero() {
               </span>
             </div>
 
-            <p className="mono-label fade-up fade-up-delay-1">
-              Digital University for Creatives
-            </p>
+            {/* Season One badge */}
+            <div className="mb-5 flex flex-wrap items-center gap-2 fade-up fade-up-delay-1">
+              <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1">
+                <span className="h-1.5 w-1.5 rounded-full bg-primary pulse-dot" />
+                <span className="font-mono text-[10px] uppercase tracking-widest text-primary">
+                  Season One — Live
+                </span>
+              </span>
+              <span className="inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-3 py-1">
+                <span className="font-mono text-[10px] uppercase tracking-widest text-accent">
+                  1,000 seats
+                </span>
+              </span>
+            </div>
 
-            <h1 className="mt-4 font-display text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl fade-up fade-up-delay-2">
-              Walk a real
+            <h1 className="font-display text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl md:text-6xl fade-up fade-up-delay-2">
+              Pro Season
               <br />
-              pro&apos;s path.
-              <br />
-              <span className="text-gradient-green">Stage by stage.</span>
+              Academy
             </h1>
 
             <p className="mt-5 max-w-xl text-base text-muted leading-relaxed sm:text-lg fade-up fade-up-delay-3">
-              Choose your coach. Walk their real journey from grassroots to pro.
-              Every lesson, every checkpoint, every coaching moment — pulled from
-              their actual career.
+              A private FC Mobile performance academy. Choose your coach. Walk
+              their real journey from grassroots to pro. Log real matches. Prove
+              progress. Get certified.
+            </p>
+
+            <p className="mt-3 max-w-xl text-sm text-foreground/80 leading-relaxed fade-up fade-up-delay-3">
+              <strong className="text-foreground">Founder&apos;s Week is open.</strong>{" "}
+              Use the academy for free. Tell the founder what helps, what&apos;s
+              missing, and what should go. No surprise payments. No hidden deals.
             </p>
 
             <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:gap-4 fade-up fade-up-delay-4">
@@ -91,37 +119,49 @@ export function Hero() {
                 href="/signup"
                 className="shimmer w-full rounded-lg bg-primary px-7 py-3.5 text-center font-medium text-background transition-all hover:shadow-glow-sm sm:w-auto"
               >
-                Start your journey
+                Claim your seat
               </Link>
               <a
-                href="#how-it-works"
+                href="#journey"
                 className="w-full rounded-lg border border-border-bright px-7 py-3.5 text-center font-medium text-foreground transition-colors hover:border-primary/40 sm:w-auto"
               >
-                See how it works
+                See the journey
               </a>
             </div>
 
             <div className="mt-8 flex items-center gap-6 fade-up fade-up-delay-5">
               <div>
-                <p className="font-display text-2xl font-bold text-foreground stat-display">2</p>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Coaches</p>
+                <p className="font-display text-2xl font-bold text-foreground stat-display">
+                  2
+                </p>
+                <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+                  Coaches
+                </p>
               </div>
               <div className="h-8 w-px bg-border" />
               <div>
-                <p className="font-display text-2xl font-bold text-foreground stat-display">12</p>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Stages</p>
+                <p className="font-display text-2xl font-bold text-foreground stat-display">
+                  6
+                </p>
+                <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+                  Stages
+                </p>
               </div>
               <div className="h-8 w-px bg-border" />
               <div>
-                <p className="font-display text-2xl font-bold text-foreground stat-display">6</p>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-muted">Game Academies</p>
+                <p className="font-display text-2xl font-bold text-accent stat-display">
+                  1,000
+                </p>
+                <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+                  Seats
+                </p>
               </div>
             </div>
           </div>
 
           {/* Right: Terminal mockup */}
           <div className="flex justify-center lg:justify-end fade-up fade-up-delay-3">
-            <JourneyTerminal />
+            <AppTerminal />
           </div>
         </div>
       </div>

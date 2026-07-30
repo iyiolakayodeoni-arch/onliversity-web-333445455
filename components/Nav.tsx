@@ -28,22 +28,28 @@ export function Nav() {
             About
           </a>
           <a
-            href="#how-it-works"
+            href="#journey"
             className="link-underline transition-colors hover:text-foreground"
           >
-            How it works
+            Journey
           </a>
           <a
-            href="#courses"
+            href="#features"
             className="link-underline transition-colors hover:text-foreground"
           >
-            Courses
+            Features
           </a>
           <a
             href="#pricing"
             className="link-underline transition-colors hover:text-foreground"
           >
             Pricing
+          </a>
+          <a
+            href="#download"
+            className="link-underline transition-colors hover:text-foreground"
+          >
+            Download
           </a>
         </nav>
 
@@ -52,7 +58,7 @@ export function Nav() {
           href="/signup"
           className="shimmer hidden rounded-lg bg-primary px-5 py-2 text-sm font-medium text-background transition-all hover:shadow-glow-sm lg:block"
         >
-          Get Started
+          Claim your seat
         </Link>
 
         {/* Mobile menu button */}
@@ -95,7 +101,7 @@ export function Nav() {
       {/* Mobile menu */}
       <div
         className={`overflow-hidden border-t border-border glass-surface transition-all duration-300 lg:hidden ${
-          menuOpen ? "max-h-72 opacity-100" : "max-h-0 opacity-0"
+          menuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6">
@@ -107,18 +113,18 @@ export function Nav() {
             About
           </a>
           <a
-            href="#how-it-works"
+            href="#journey"
             onClick={() => setMenuOpen(false)}
             className="rounded-lg px-3 py-2.5 text-sm text-muted transition-colors hover:bg-surface hover:text-foreground"
           >
-            How it works
+            Journey
           </a>
           <a
-            href="#courses"
+            href="#features"
             onClick={() => setMenuOpen(false)}
             className="rounded-lg px-3 py-2.5 text-sm text-muted transition-colors hover:bg-surface hover:text-foreground"
           >
-            Courses
+            Features
           </a>
           <a
             href="#pricing"
@@ -127,12 +133,19 @@ export function Nav() {
           >
             Pricing
           </a>
+          <a
+            href="#download"
+            onClick={() => setMenuOpen(false)}
+            className="rounded-lg px-3 py-2.5 text-sm text-muted transition-colors hover:bg-surface hover:text-foreground"
+          >
+            Download
+          </a>
           <Link
             href="/signup"
             onClick={() => setMenuOpen(false)}
             className="mt-2 rounded-lg bg-primary px-3 py-2.5 text-center text-sm font-medium text-background"
           >
-            Get Started
+            Claim your seat
           </Link>
         </nav>
       </div>
