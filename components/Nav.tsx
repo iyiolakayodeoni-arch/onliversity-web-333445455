@@ -6,7 +6,7 @@ import { Logo } from "./Logo";
 export function Nav() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-[60] border-b border-border/60 backdrop-blur-xl bg-background/80">
+    <header className="sticky top-0 z-[60] border-b border-border/60 backdrop-blur-xl bg-background/80 hud-border">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 sm:px-6 h-[64px]">
         <Link href="/" className="group flex items-center gap-2.5">
           <span className="transition-transform duration-300 group-hover:scale-110">
@@ -35,7 +35,7 @@ export function Nav() {
         <div className="hidden md:flex items-center gap-3">
           <a href="#updates" className="text-[13px] text-muted hover:text-foreground transition-colors">Get updates →</a>
           <a href="#updates" className="cta-energy shimmer rounded-full bg-primary px-4 py-2 text-[13px] font-medium text-background hover:shadow-[0_0_22px_-4px_rgba(57,255,106,0.6)] transition-all">
-            Join waitlist
+            Download App
           </a>
         </div>
 

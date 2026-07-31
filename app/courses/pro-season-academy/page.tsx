@@ -85,14 +85,14 @@ export default function ProSeasonAcademyPage() {
             Ready to start your journey?
           </h2>
           <p className="mt-3 text-sm text-muted">
-            Join the waitlist now. Your seat is reserved.
+            Download ProSeason Academy to get started.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/signup"
               className="rounded bg-primary px-7 py-3 font-medium text-background transition-opacity hover:opacity-90"
             >
-              Join the waitlist
+              Download ProSeason Academy
             </Link>
             <Link
               href="/"
