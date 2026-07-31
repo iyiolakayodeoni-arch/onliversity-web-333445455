@@ -24,7 +24,7 @@ export function ProductSection() {
             Not a tips feed.<br/> <span className="text-primary">A real academy you walk through.</span>
           </h2>
           <p className="mt-5 text-[15px] sm:text-[16px] leading-[1.6] text-muted">
-            Inside the Onliversity app, you don&apos;t scroll. You train. Pro Season Academy gives you a head coach, a 6-stage path modeled on a real pro journey, and tools that make you confront your actual gameplay — not someone else&apos;s highlights.
+            Inside the ProSeason Academy app — download it to start — you don't scroll. You train. It gives you a head coach (Chinedu or Obinna), a 6-stage path modeled on a real pro journey, and tools that make you confront your actual gameplay — not someone else's highlights.
           </p>
         </div>
 
