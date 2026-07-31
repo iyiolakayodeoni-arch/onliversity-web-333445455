@@ -6,6 +6,7 @@ import { Logo } from "@/components/Logo";
 import { allCoaches } from "@/components/CoachCharacters";
 import { InteractivePreview } from "@/components/InteractivePreview";
 import { PitchPattern } from "@/components/PitchPattern";
+import { RankProgressCard } from "@/components/RankProgressCard";
 
 export default function DashboardPage() {
   const [username, setUsername] = useState("");
@@ -57,6 +58,9 @@ export default function DashboardPage() {
             This is a preview of what your Journey looks like inside the app. Pro Season Academy — your actual FC Mobile course — lives in the Onliversity app. Download it to start.
           </p>
         </div>
+
+        {/* Rank & Season Progress — gamified HUD */}
+        <RankProgressCard />
 
         {/* Pro Season Academy Branding */}
         <div className="relative mb-8 overflow-hidden rounded-lg border border-border bg-surface-elevated/50 p-6">

@@ -8,11 +8,13 @@ export function Nav() {
   return (
     <header className="sticky top-0 z-[60] border-b border-border/60 backdrop-blur-xl bg-background/80">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-4 sm:px-6 h-[64px]">
-        <Link href="/" className="flex items-center gap-2.5">
-          <Logo size={28} />
+        <Link href="/" className="group flex items-center gap-2.5">
+          <span className="transition-transform duration-300 group-hover:scale-110">
+            <Logo size={28} />
+          </span>
           <span className="font-display font-bold tracking-tight text-[15px]">ONLIVERSITY</span>
           <span className="hidden sm:inline-flex ml-2 rounded-full border border-primary/20 bg-primary/10 px-2.5 py-0.5 font-mono text-[9px] uppercase tracking-widest text-primary">
-            Football × Academy
+            Esports × Academy
           </span>
         </Link>
 
@@ -23,15 +25,16 @@ export function Nav() {
             ["Inside", "#inside"],
             ["Future", "#future"],
           ].map(([label, href]) => (
-            <a key={label} href={href} className="text-[13px] text-muted hover:text-foreground transition-colors">
+            <a key={label} href={href} className="group relative text-[13px] text-muted hover:text-foreground transition-colors">
               {label}
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-primary transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="#updates" className="text-[13px] text-muted hover:text-foreground">Get updates →</a>
-          <a href="#updates" className="shimmer rounded-full bg-primary px-4 py-2 text-[13px] font-medium text-background hover:shadow-[0_0_20px_-5px_rgba(57,255,106,0.5)] transition-all">
+          <a href="#updates" className="text-[13px] text-muted hover:text-foreground transition-colors">Get updates →</a>
+          <a href="#updates" className="cta-energy shimmer rounded-full bg-primary px-4 py-2 text-[13px] font-medium text-background hover:shadow-[0_0_22px_-4px_rgba(57,255,106,0.6)] transition-all">
             Join waitlist
           </a>
         </div>

@@ -47,7 +47,7 @@ export function StorySection() {
                 { t: "Real coaches, fictionalized for clarity", d: "Chinedu and Obinna are inspired by a real pro rise, reimagined into two distinct personalities so you actually care which path you choose." },
                 { t: "Founder answers", d: "During Season One, the founder lives in The Halls — academy chat. Bugs, feedback, pricing questions go directly to a human. Not a bot ticket." },
               ].map((x) => (
-                <div key={x.t} className="glass-card p-5">
+                <div key={x.t} className="glass-card tilt-card p-5">
                   <p className="font-display font-bold text-[13px]">{x.t}</p>
                   <p className="mt-2 text-[12px] leading-[1.6] text-muted">{x.d}</p>
                 </div>

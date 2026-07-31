@@ -46,7 +46,7 @@ export function ProductSection() {
               personality: "Calm, detailed. Makes you think.",
             },
           ].map((c) => (
-            <div key={c.name} className="rounded-[22px] border border-border bg-surface/80 p-6 sm:p-7 relative overflow-hidden">
+            <div key={c.name} className="tilt-card rounded-[22px] border border-border bg-surface/80 p-6 sm:p-7 relative overflow-hidden">
               <div className="absolute top-0 right-0 w-[160px] h-[160px] rounded-full blur-3xl opacity-20" style={{ background: c.color }} />
               <div className="relative flex gap-4">
                 <div className="h-12 w-12 rounded-full border bg-background grid place-items-center font-display font-bold" style={{ borderColor: c.color, color: c.color }}>{c.name[0]}</div>

@@ -72,7 +72,7 @@ export function RoadmapSection() {
 
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {academies.map((a, i) => (
-            <div key={a.name} className={`fade-up glass-card p-6 text-left ${i===0 ? "!border-primary/20" : ""}`} style={{ transitionDelay: `${Math.min(i*0.08,0.32)}s` }}>
+            <div key={a.name} className={`fade-up glass-card tilt-card p-6 text-left ${i===0 ? "!border-primary/20" : ""}`} style={{ transitionDelay: `${Math.min(i*0.08,0.32)}s` }}>
               <div className="flex items-start justify-between mb-4">
                 <div className="h-10 w-10 rounded-xl bg-background border border-border grid place-items-center text-lg">{a.icon}</div>
                 <span className={`rounded-full border px-2.5 py-1 font-mono text-[9px] uppercase tracking-widest ${a.statusColor}`}>{a.status}</span>

@@ -15,6 +15,11 @@ const config: Config = {
         primary: "#39ff6a",
         "primary-dim": "#1f7a3d",
         accent: "#f2c078",
+        electric: "#21e6c1",
+        violet: "#a06bff",
+        magenta: "#ff3df0",
+        gold: "#ffd23f",
+        danger: "#ff3d51",
       },
       fontFamily: {
         display: ["var(--font-display)", "sans-serif"],

@@ -14,6 +14,12 @@
   --color-primary-dim: #1f7a3d;
   --color-accent: #f2c078;
 
+  /* ── Esports energy accents ── */
+  --color-electric: #21e6c1;   /* electric cyan — HUD / data */
+  --color-violet: #a06bff;     /* neon violet — highlights */
+  --color-magenta: #ff3df0;    /* hot magenta — combo / streak */
+  --color-gold: #ffd23f;       /* gold — rank / reward */
+
   --glass-bg: rgba(255, 255, 255, 0.02);
   --glass-border: rgba(255, 255, 255, 0.06);
   --glass-blur: 16px;
@@ -127,3 +133,147 @@ body { background: var(--color-background); color: var(--color-foreground); font
 .coach-card-wrapper{position:relative;width:100%;max-width:340px;margin:0 auto}
 .coach-card-inner{position:relative;width:100%;aspect-ratio:3/4.2;cursor:pointer}
 .coach-card-front{position:relative;width:100%;height:100%;background:rgba(10,18,13,0.8);backdrop-filter:blur(16px);border:1.5px solid rgba(57,255,106,0.08);border-radius:16px;overflow:hidden}
+
+/* ════════════════════════════════════════════════════════════════
+   ONLIVERSITY — ESPORTS MOTION SYSTEM
+   Gamified, high-energy, always-alive. Honors prefers-reduced-motion.
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── Neon text shimmer (headline energy) ── */
+@keyframes neon-shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+.neon-text {
+  background: linear-gradient(100deg, var(--color-primary) 0%, #bafff0 25%, var(--color-electric) 50%, var(--color-primary) 75%, var(--color-primary) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: neon-shimmer 6s linear infinite;
+}
+@keyframes neon-pulse {
+  0%, 100% { text-shadow: 0 0 8px rgba(57,255,106,0.45), 0 0 22px rgba(57,255,106,0.18); }
+  50% { text-shadow: 0 0 14px rgba(57,255,106,0.7), 0 0 34px rgba(57,255,106,0.28); }
+}
+.neon-glow { animation: neon-pulse 3.5s ease-in-out infinite; }
+
+/* ── Animated gradient border (HUD frame) ── */
+@keyframes border-spin { to { transform: rotate(360deg); } }
+.hud-border { position: relative; isolation: isolate; }
+.hud-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(from var(--a, 0deg),
+    transparent 0deg, var(--color-primary) 60deg, var(--color-electric) 120deg,
+    transparent 200deg, var(--color-violet) 280deg, transparent 360deg);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+.hud-border:hover::before { opacity: 0.9; animation: border-spin 3s linear infinite; }
+
+/* ── Aurora — slow drifting energy blobs ── */
+@keyframes aurora-a { 0%{transform:translate(-10%,-5%) scale(1);} 33%{transform:translate(15%,10%) scale(1.15);} 66%{transform:translate(-5%,15%) scale(0.95);} 100%{transform:translate(-10%,-5%) scale(1);} }
+@keyframes aurora-b { 0%{transform:translate(10%,5%) scale(1.1);} 50%{transform:translate(-15%,-10%) scale(0.9);} 100%{transform:translate(10%,5%) scale(1.1);} }
+@keyframes aurora-c { 0%{transform:translate(0,0) scale(1);} 50%{transform:translate(20%,-15%) scale(1.2);} 100%{transform:translate(0,0) scale(1);} }
+.aurora-a { animation: aurora-a 22s ease-in-out infinite; }
+.aurora-b { animation: aurora-b 28s ease-in-out infinite; }
+.aurora-c { animation: aurora-c 18s ease-in-out infinite; }
+
+/* ── Perspective grid floor (Tron / arena feel) ── */
+@keyframes grid-ride { 0%{background-position:0 0;} 100%{background-position:0 48px;} }
+.arena-grid {
+  background-image:
+    linear-gradient(to right, rgba(57,255,106,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(57,255,106,0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  animation: grid-ride 3.2s linear infinite;
+}
+
+/* ── Scanline sweep overlay ── */
+@keyframes scan-sweep { 0%{transform:translateY(-120%); opacity:0;} 10%{opacity:1;} 90%{opacity:1;} 100%{transform:translateY(220%); opacity:0;} }
+.scan-sweep { animation: scan-sweep 4.5s ease-in-out infinite; }
+
+/* ── Marquee / broadcast ticker ── */
+@keyframes marquee { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+.marquee-track { display: inline-flex; min-width: 200%; animation: marquee 28s linear infinite; }
+.marquee-track.fast { animation-duration: 18s; }
+.marquee-track.rev { animation-direction: reverse; }
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* ── XP / progress fill (animates from 0 on .visible) ── */
+.xp-fill { width: 0; transition: width 1.4s cubic-bezier(0.16,1,0.3,1); }
+.xp-fill.visible { width: var(--xp, 0%); }
+@keyframes xp-shine { 0%{transform:translateX(-120%);} 60%,100%{transform:translateX(320%);} }
+.xp-shine::after {
+  content:""; position:absolute; inset:0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.55), transparent);
+  transform: translateX(-120%);
+}
+.xp-shine.visible::after { animation: xp-shine 1.9s ease-out 0.3s; }
+
+/* ── Count-up number tick ── */
+@keyframes tick-pop { 0%{transform:translateY(6px); opacity:0;} 100%{transform:translateY(0); opacity:1;} }
+.tick { display:inline-block; animation: tick-pop 0.4s ease-out both; }
+
+/* ── Floating particles ── */
+@keyframes drift {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  10% { opacity: var(--p-op, 0.5); }
+  90% { opacity: var(--p-op, 0.5); }
+  100% { transform: translateY(-120px) translateX(var(--p-x, 12px)); opacity: 0; }
+}
+.particle { position:absolute; border-radius:999px; animation: drift linear infinite; }
+
+/* ── Live broadcast blink ── */
+@keyframes live-blink { 0%,100%{opacity:1; box-shadow:0 0 0 0 rgba(255,61,81,0.6);} 50%{opacity:0.6; box-shadow:0 0 0 6px rgba(255,61,81,0);} }
+.live-dot { animation: live-blink 1.6s ease-in-out infinite; }
+
+/* ── Badge pop-in ── */
+@keyframes badge-pop { 0%{transform:scale(0.6) rotate(-12deg); opacity:0;} 60%{transform:scale(1.08) rotate(3deg);} 100%{transform:scale(1) rotate(0); opacity:1;} }
+.badge-pop { animation: badge-pop 0.6s cubic-bezier(0.34,1.56,0.64,1) both; }
+
+/* ── Tilt-on-hover cards ── */
+.tilt-card { transition: transform 0.3s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s ease, border-color 0.3s ease; transform-style: preserve-3d; }
+.tilt-card:hover { transform: perspective(1000px) translateY(-6px) rotateX(4deg) rotateY(-4deg); box-shadow: 0 24px 60px -20px rgba(0,0,0,0.8), 0 0 36px -10px rgba(57,255,106,0.25); }
+
+/* ── CTA energy sweep ── */
+.cta-energy { position: relative; overflow: hidden; }
+.cta-energy::after {
+  content:""; position:absolute; top:0; left:-60%; width:40%; height:100%;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,0.55), transparent);
+  transform: skewX(-20deg);
+}
+.cta-energy:hover::after { left:130%; transition: left 0.7s ease; }
+
+/* ── Glitch flicker (subtle, on hero mark) ── */
+@keyframes glitch { 0%,92%,100%{transform:translate(0); opacity:1;} 93%{transform:translate(-1px,1px);} 94%{transform:translate(1px,-1px);} 95%{transform:translate(-1px,-1px);} 96%{transform:translate(0);} }
+.glitch { animation: glitch 7s infinite; }
+
+/* ── Stat chip glow ── */
+.chip-glow { box-shadow: 0 0 0 1px rgba(57,255,106,0.18), 0 0 18px -6px rgba(57,255,106,0.25); }
+
+/* ── Boot / loading screen logo entrance ── */
+@keyframes loader-pop { 0%{transform:scale(0.7); opacity:0;} 55%{transform:scale(1.06); opacity:1;} 100%{transform:scale(1);} }
+.loader-pop { animation: loader-pop 0.85s cubic-bezier(0.34,1.56,0.64,1) both; }
+
+/* ── Reduced motion: kill the motion, keep the look ── */
+@media (prefers-reduced-motion: reduce) {
+  .neon-text, .neon-glow, .aurora-a, .aurora-b, .aurora-c, .arena-grid,
+  .scan-sweep, .marquee-track, .live-dot, .glitch, .float, .pulse-dot, .particle, .loader-pop {
+    animation: none !important;
+  }
+  .fade-up { transition: none !important; opacity: 1 !important; transform: none !important; }
+  .xp-fill, .xp-fill.visible { transition: none !important; width: var(--xp, 0%) !important; }
+  html { scroll-behavior: auto; }
+}
