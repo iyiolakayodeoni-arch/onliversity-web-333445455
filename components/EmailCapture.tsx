@@ -41,7 +41,7 @@ export function EmailCapture({ variant = "hero", placeholder = "your@email.com" 
     <form onSubmit={submit} className="w-full">
       <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 p-1.5 rounded-2xl bg-surface border border-border">
         <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" placeholder={placeholder} className="flex-1 bg-transparent px-4 py-3 text-sm outline-none placeholder:text-muted/50" required />
-        <button disabled={status==="loading"} className="shimmer rounded-xl bg-primary px-6 py-3 text-sm font-medium text-background transition-all hover:shadow-[0_0_24px_-6px_rgba(57,255,106,0.45)] disabled:opacity-60">
+        <button disabled={status==="loading"} className="cta-energy shimmer rounded-xl bg-primary px-6 py-3 text-sm font-medium text-background transition-all hover:shadow-[0_0_28px_-6px_rgba(57,255,106,0.55)] disabled:opacity-60">
           {status==="loading" ? "Adding..." : "Get updates"}
         </button>
       </div>

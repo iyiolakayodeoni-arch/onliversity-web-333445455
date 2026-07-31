@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { AnimatedBackground } from "@/components/AnimatedBackground";
 
 export const metadata: Metadata = {
-  title: "Onliversity — The University Football Actually Needed",
+  title: "Onliversity — The Esports Academy FC Mobile Needed",
   description:
-    "Onliversity is a real academy system for creatives. Starting with FC Mobile. No fake gurus, no rank scams. Just structured 6-stage coaching from players who lived grassroots to pro. Get updates — email only.",
+    "Onliversity is a real esports academy for FC Mobile. No fake gurus, no rank scams. Pick a pro coach, walk their real journey from grassroots to pro, log your matches, level up stage-by-stage. Get updates — email only.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -21,7 +22,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Fallback system fonts if Google blocked — we load via link as progressive enhance */}
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body antialiased">
+        <AnimatedBackground />
+        {children}
+      </body>
     </html>
   );
 }

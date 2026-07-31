@@ -116,7 +116,7 @@ export function AcademyBento() {
 
         <div className="grid lg:grid-cols-12 gap-4 sm:gap-5">
           {bento.map((b, i) => (
-            <div key={b.label} className={`fade-up glass-card p-6 sm:p-7 ${b.span}`} style={{ transitionDelay: `${Math.min(i*0.06,0.24)}s`}}>
+            <div key={b.label} className={`fade-up glass-card tilt-card p-6 sm:p-7 ${b.span}`} style={{ transitionDelay: `${Math.min(i*0.06,0.24)}s`}}>
               <p className="font-mono text-[10px] uppercase tracking-widest text-primary">{b.label}</p>
               <p className="mt-3 font-display font-bold text-[18px] sm:text-[20px] leading-[1.15]">{b.title}</p>
               <p className="mt-2 text-[13px] leading-[1.6] text-muted">{b.desc}</p>
