@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
+import { BootScreen } from "@/components/BootScreen";
 
 export const metadata: Metadata = {
   title: "Onliversity — The Esports Academy FC Mobile Needed",
@@ -24,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-body antialiased">
         <AnimatedBackground />
-        {children}
+        <BootScreen>{children}</BootScreen>
       </body>
     </html>
   );
