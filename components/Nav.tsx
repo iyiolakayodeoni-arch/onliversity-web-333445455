@@ -34,9 +34,9 @@ export function Nav() {
 
         <div className="hidden md:flex items-center gap-3">
           <a href="#updates" className="text-[13px] text-muted hover:text-foreground transition-colors">Get updates →</a>
-          <a href="#updates" className="cta-energy shimmer rounded-full bg-primary px-4 py-2 text-[13px] font-medium text-background hover:shadow-[0_0_22px_-4px_rgba(57,255,106,0.6)] transition-all">
+          <Link href="/pro-season-academy" className="cta-energy shimmer rounded-full bg-primary px-4 py-2 text-[13px] font-medium text-background hover:shadow-[0_0_22px_-4px_rgba(57,255,106,0.6)] transition-all">
             Download App
-          </a>
+          </Link>
         </div>
 
         <button onClick={() => setOpen(!open)} className="md:hidden h-9 w-9 grid place-items-center rounded-full border border-border text-muted">
@@ -58,7 +58,7 @@ export function Nav() {
                 {l}
               </a>
             ))}
-            <a href="#updates" onClick={()=>setOpen(false)} className="mt-2 rounded-full bg-primary px-4 py-3 text-center text-sm font-medium text-background">Notify me</a>
+            <Link href="/pro-season-academy" onClick={()=>setOpen(false)} className="mt-2 rounded-full bg-primary px-4 py-3 text-center text-sm font-medium text-background">Download App</Link>
           </nav>
         </div>
       )}

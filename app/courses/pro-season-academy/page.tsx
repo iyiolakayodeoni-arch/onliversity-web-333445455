@@ -89,7 +89,7 @@ export default function ProSeasonAcademyPage() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/signup"
+              href="/pro-season-academy"
               className="rounded bg-primary px-7 py-3 font-medium text-background transition-opacity hover:opacity-90"
             >
               Download ProSeason Academy
