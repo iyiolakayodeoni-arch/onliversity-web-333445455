@@ -212,13 +212,15 @@ export default function DownloadPage() {
             ))}
           </div>
 
-          {/* Why direct APK */}
+          {/* Why no store */}
           <div className="mt-6 rounded-[20px] border border-primary/20 bg-primary/[0.06] px-6 py-5 text-center sm:px-8">
             <p className="text-[13px] leading-[1.7] text-foreground sm:text-[14px]">
-              <strong className="text-primary">Why a direct APK?</strong>{" "}
-              ProSeasonAcademy isn&apos;t on a store — it&apos;s a capped programme, and every
-              seat is handled by us. Downloading direct keeps your seat yours and your
-              video on your phone. When a seat opens but the cap is full,{" "}
+              <strong className="text-primary">Why no Play Store?</strong>{" "}
+              We will never be on one. The store is a feed of infinite, anonymous apps —
+              the opposite of what this programme is. ProSeasonAcademy is capped at 1,000
+              seats, and every seat is handled by us — that&apos;s how the cap and the
+              permanent coach lock are enforced. Direct download isn&apos;t a workaround;
+              it&apos;s the point. When the cap is full,{" "}
               <Link href="/signup" className="text-primary underline underline-offset-2 hover:text-foreground">join the waitlist</Link>.
             </p>
           </div>

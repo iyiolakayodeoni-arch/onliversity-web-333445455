@@ -40,6 +40,10 @@ export function MirrorFaq() {
       q: "WHAT IS THE STANDARD?",
       a: "The benchmark journey of the best in your path — a composite, never a copy of one person. It shows where disciplined people go. Your evidence decides whether you're doing the work to get there.",
     },
+    {
+      q: "WILL THIS EVER BE ON GOOGLE PLAY?",
+      a: "No. Never. A store is a feed of infinite, anonymous apps — the opposite of everything ProSeasonAcademy is. We handle every seat ourselves, which is exactly how the 1,000-seat cap and the permanent coach lock are enforced. Direct download is not a workaround; it's the point.",
+    },
   ];
 
   return (

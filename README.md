@@ -4,7 +4,8 @@ Phase 0 scaffold, built from the Onliversity Full Briefing (Part 4) and the Pro 
 
 ## App downloads
 
-The app is distributed as a direct Android APK (not a store listing).
+The app is distributed as a direct Android APK and will never be listed on a store (Google
+Play or otherwise) — every seat is handled by Onliversity directly.
 
 - Put the signed APK at `public/downloads/ProSeasonAcademy-v1.0.0.apk` (the filename is read
   from `downloadUrl` in `lib/app-data.ts`).
