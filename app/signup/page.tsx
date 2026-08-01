@@ -21,7 +21,7 @@ export default function SignupPage() {
           <p className="mt-4 text-[14px] leading-[1.6] text-muted">
             We removed sign-up from the website on purpose. This site is just to tell our story and collect emails for honest updates.
             <br/><br/>
-            If you want to join Pro Season Academy, download the Onliversity app when Season One opens — you’ll claim your seat and choose your coach there.
+            If you want to join Pro Season · FC Mobile Pro, start your Baseline Week inside the Onliversity app — you’ll claim your seat and lock your coach there.
             <br/><br/>
             For now, drop your email below. We’ll ping you when things open. No spam.
           </p>

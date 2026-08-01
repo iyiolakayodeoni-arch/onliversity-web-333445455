@@ -51,11 +51,11 @@ export default function DashboardPage() {
           <div className="mb-2 flex items-center justify-center gap-2">
             <span className="h-2 w-2 rounded-full bg-primary pulse-dot" />
             <p className="font-mono text-[10px] uppercase tracking-widest text-primary">
-              App Preview — Pro Season Academy
+              App Preview — Pro Season · FC Mobile Pro
             </p>
           </div>
           <p className="text-sm text-muted">
-            This is a preview of what your Journey looks like inside the app. Pro Season Academy — your actual FC Mobile course — lives in the Onliversity app. Download it to start.
+            This is a preview of your Journey inside the app. Pro Season is Mirror&apos;s professional development programme for FC Mobile players — your actual programme lives in the Onliversity app. Start your Baseline Week to begin.
           </p>
         </div>
 
@@ -78,10 +78,10 @@ export default function DashboardPage() {
                   </span>
                 </div>
                 <h1 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                  Pro Season Academy
+                  Pro Season · FC Mobile Pro
                 </h1>
                 <p className="mt-1 text-sm text-muted sm:text-base">
-                  Choose your coach. Walk their path. Get certified.
+                  One coach. One road. One standard. No excuses.
                 </p>
               </div>
               <div className="flex gap-4 text-center">
@@ -124,8 +124,8 @@ export default function DashboardPage() {
 
         <div className="mb-8 rounded-lg border border-border bg-surface-elevated/50 p-4 text-center">
           <p className="text-sm text-muted">
-            <strong className="text-foreground">Two things happen together in Pro Season Academy:</strong> you walk a real Journey with your coach, and your coach teaches you — using everything it takes to actually win at FC Mobile.{" "}
-            <span className="text-primary">Download the app to start both.</span>
+            <strong className="text-foreground">The Mirror records the evidence. You do the seeing.</strong> You set an intention, answer at checkpoints, and watch your thinking sit beside the recording. Only your matches, answers and receipts move your journey forward.{" "}
+            <span className="text-primary">Start your Baseline Week to begin.</span>
           </p>
         </div>
 
@@ -178,14 +178,14 @@ export default function DashboardPage() {
             Ready to start for real?
           </h3>
           <p className="mt-2 text-sm text-muted">
-            Download the Onliversity app to begin your Pro Season Academy journey.
+            Download the Onliversity app to begin your Pro Season · FC Mobile Pro journey.
           </p>
           <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
               href="/pro-season-academy"
               className="shimmer rounded-lg bg-primary px-7 py-3 font-medium text-background transition-all hover:shadow-glow-sm"
             >
-              Download ProSeason Academy
+              Start your Baseline Week
             </Link>
           </div>
         </div>

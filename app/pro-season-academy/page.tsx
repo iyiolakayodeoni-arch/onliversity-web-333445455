@@ -276,7 +276,7 @@ export default function ProSeasonAcademyPage() {
             <span>›</span>
             <Link href="/#download" className="hover:text-foreground transition-colors">Apps</Link>
             <span>›</span>
-            <span className="text-foreground">Pro Season Academy</span>
+            <span className="text-foreground">Pro Season · FC Mobile Pro</span>
           </div>
 
           {/* App header */}
@@ -314,7 +314,7 @@ export default function ProSeasonAcademyPage() {
 
           {/* Download button */}
           <div className="mt-6 flex flex-col gap-3 sm:flex-row fade-up fade-up-delay-3">
-            <Link href="/signup" className="shimmer flex-1 rounded-xl bg-primary px-6 py-3.5 text-center font-medium text-background text-base transition-all hover:shadow-glow-sm">Download ProSeason Academy — Free</Link>
+            <Link href="/signup" className="shimmer flex-1 rounded-xl bg-primary px-6 py-3.5 text-center font-medium text-background text-base transition-all hover:shadow-glow-sm">Start your Baseline Week — 14-day trial</Link>
             <button className="flex items-center justify-center gap-2 rounded-xl border border-border px-6 py-3.5 text-sm text-foreground transition-colors hover:border-primary/30">
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
               Add to wishlist
@@ -345,7 +345,7 @@ export default function ProSeasonAcademyPage() {
           <p className="text-sm text-muted leading-relaxed whitespace-pre-line">{appInfo.description}</p>
 
           <div className="mt-6 flex flex-wrap gap-2">
-            {["FC Mobile", "Esports", "Coaching", "Private Academy", "Match Analysis", "Founder's Week"].map((tag) => (
+            {["FC Mobile", "Mirror method", "Professional development", "One coach, locked", "Receipts, not promises", "14-day trial"].map((tag) => (
               <span key={tag} className="rounded-full border border-border px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-muted">{tag}</span>
             ))}
           </div>
@@ -444,10 +444,10 @@ export default function ProSeasonAcademyPage() {
       {/* Back to home CTA */}
       <section className="border-b border-border bg-black">
         <div className="mx-auto max-w-4xl px-4 py-12 text-center sm:px-6 sm:py-16">
-          <h2 className="font-display text-2xl font-bold text-foreground">Ready to start?</h2>
-          <p className="mt-2 text-sm text-muted">Season One is live. Founder&apos;s Week is active. 1,000 seats.</p>
+          <h2 className="font-display text-2xl font-bold text-foreground">See yourself. Do the work.</h2>
+          <p className="mt-2 text-sm text-muted">Season One is live. 1,000 seats. One coach, locked permanently.</p>
           <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <Link href="/signup" className="shimmer rounded-lg bg-primary px-8 py-3 font-medium text-background transition-all hover:shadow-glow-sm">Install — Free</Link>
+            <Link href="/signup" className="shimmer rounded-lg bg-primary px-8 py-3 font-medium text-background transition-all hover:shadow-glow-sm">Start your Baseline Week</Link>
             <Link href="/" className="text-sm text-muted transition-colors hover:text-foreground">← Back to Onliversity</Link>
           </div>
         </div>

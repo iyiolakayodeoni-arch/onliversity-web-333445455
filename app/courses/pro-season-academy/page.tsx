@@ -19,20 +19,21 @@ export default function ProSeasonAcademyPage() {
             <Logo size={56} />
           </div>
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">
-            Esports · Built for FC Mobile players
+            Mirror · Pro Season — the first programme
           </p>
           <h1 className="mt-4 font-display text-4xl font-bold tracking-tight md:text-5xl">
-            Pro Season Academy
+            Pro Season · FC Mobile Pro
           </h1>
           <p className="mx-auto mt-5 max-w-lg text-muted">
-            A gamified, structured path from grassroots to pro — with AI coaching, XP progression, and a real certification at the end.
+            Mirror&apos;s professional development programme for FC Mobile players who want
+            their behaviour to match their ambition. One coach. One road. One standard. No excuses.
           </p>
           <div className="mt-8 flex items-center justify-center gap-3">
             <span className="rounded border border-primary/30 bg-primary/10 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-primary">
-              Launches Jan 1, 2027
+              Live · Season One · 1,000 seats
             </span>
             <span className="rounded border border-accent/30 bg-accent/10 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-accent">
-              6 Stages · 2000 XP
+              6 stages · Your evidence moves you
             </span>
           </div>
         </div>
@@ -47,31 +48,33 @@ export default function ProSeasonAcademyPage() {
       <section className="border-b border-border bg-surface/40">
         <div className="mx-auto max-w-5xl px-6 py-20">
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">
-            How it works
+            How the method works
           </p>
           <h2 className="mt-3 max-w-lg font-display text-2xl font-bold tracking-tight">
-            Not a course. A real path.
+            Not a course. A structure you walk.
           </h2>
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="rounded border border-border bg-surface-elevated/40 p-6">
               <p className="font-mono text-xs text-primary">01</p>
-              <p className="mt-2 font-display font-bold">Real matching</p>
+              <p className="mt-2 font-display font-bold">Baseline Week</p>
               <p className="mt-1 text-sm text-muted">
-                Your playstyle gets matched to a real FC Mobile pro — not a random assignment.
+                Seven days, five matches, honest analysis. Your profile seals before the road opens.
               </p>
             </div>
             <div className="rounded border border-border bg-surface-elevated/40 p-6">
               <p className="font-mono text-xs text-primary">02</p>
-              <p className="mt-2 font-display font-bold">AI Coach watches you</p>
+              <p className="mt-2 font-display font-bold">The Mirror records. You see.</p>
               <p className="mt-1 text-sm text-muted">
-                Post-match breakdowns and check-ins, in your coach's own voice, the whole way through.
+                Set an intention before each match, answer at half-time and full-time in your own
+                words, and watch your thinking sit beside the evidence. No AI verdicts.
               </p>
             </div>
             <div className="rounded border border-border bg-surface-elevated/40 p-6">
               <p className="font-mono text-xs text-primary">03</p>
-              <p className="mt-2 font-display font-bold">Certification + Income</p>
+              <p className="mt-2 font-display font-bold">Receipts, not promises</p>
               <p className="mt-1 text-sm text-muted">
-                Finish with a real certificate — and earn 80% training the next wave.
+                Six universal stages, moved forward only by your matches, answers and receipts.
+                The app never thinks for you.
               </p>
             </div>
           </div>
@@ -82,17 +85,17 @@ export default function ProSeasonAcademyPage() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-3xl px-6 py-16 text-center">
           <h2 className="font-display text-2xl font-bold tracking-tight">
-            Ready to start your journey?
+            Start your Baseline Week.
           </h2>
           <p className="mt-3 text-sm text-muted">
-            Download ProSeason Academy to get started.
+            Season One is live. 1,000 seats. One coach, locked permanently.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               href="/pro-season-academy"
               className="rounded bg-primary px-7 py-3 font-medium text-background transition-opacity hover:opacity-90"
             >
-              Download ProSeason Academy
+              Start Baseline Week
             </Link>
             <Link
               href="/"

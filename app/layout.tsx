@@ -4,9 +4,9 @@ import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { BootScreen } from "@/components/BootScreen";
 
 export const metadata: Metadata = {
-  title: "Onliversity — The Esports Academy FC Mobile Needed",
+  title: "Onliversity — Mirror · Pro Season · See Yourself. Do the Work.",
   description:
-    "Onliversity is a real esports academy for FC Mobile. No fake gurus, no rank scams. Pick a pro coach, walk their real journey from grassroots to pro, log your matches, level up stage-by-stage. Get updates — email only.",
+    "Mirror is the method. Pro Season is the first programme — a professional development programme for FC Mobile players. One coach. One road. One standard. No excuses. The Mirror does not think for you.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
