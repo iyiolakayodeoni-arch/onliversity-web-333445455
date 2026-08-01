@@ -55,7 +55,7 @@ export default function DashboardPage() {
             </p>
           </div>
           <p className="text-sm text-muted">
-            This is a preview of your Journey inside the app. ProSeasonAcademy is Mirror&apos;s professional development programme for FC Mobile players — your actual programme lives in the Onliversity app. Start your Baseline Week to begin.
+            This is a preview of your Journey inside the app. ProSeasonAcademy is Mirror&apos;s professional development programme for FC Mobile players — your actual programme lives in the Onliversity app. Download the app to begin.
           </p>
         </div>
 
@@ -125,7 +125,7 @@ export default function DashboardPage() {
         <div className="mb-8 rounded-lg border border-border bg-surface-elevated/50 p-4 text-center">
           <p className="text-sm text-muted">
             <strong className="text-foreground">The Mirror records the evidence. You do the seeing.</strong> You set an intention, answer at checkpoints, and watch your thinking sit beside the recording. Only your matches, answers and receipts move your journey forward.{" "}
-            <span className="text-primary">Start your Baseline Week to begin.</span>
+            <span className="text-primary">Download the app to begin.</span>
           </p>
         </div>
 
@@ -178,14 +178,14 @@ export default function DashboardPage() {
             Ready to start for real?
           </h3>
           <p className="mt-2 text-sm text-muted">
-            Download the Onliversity app to begin your ProSeasonAcademy journey.
+            Download the app to begin your ProSeasonAcademy journey.
           </p>
           <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
-              href="/pro-season-academy"
+              href="/download"
               className="shimmer rounded-lg bg-primary px-7 py-3 font-medium text-background transition-all hover:shadow-glow-sm"
             >
-              Start your Baseline Week
+              Download the app
             </Link>
           </div>
         </div>

@@ -85,17 +85,17 @@ export default function ProSeasonAcademyPage() {
       <section className="border-b border-border">
         <div className="mx-auto max-w-3xl px-6 py-16 text-center">
           <h2 className="font-display text-2xl font-bold tracking-tight">
-            Start your Baseline Week.
+            Download the app.
           </h2>
           <p className="mt-3 text-sm text-muted">
             Season One is live. 1,000 seats. One coach, locked permanently.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              href="/pro-season-academy"
+              href="/download"
               className="rounded bg-primary px-7 py-3 font-medium text-background transition-opacity hover:opacity-90"
             >
-              Start Baseline Week
+              Download the app
             </Link>
             <Link
               href="/"
