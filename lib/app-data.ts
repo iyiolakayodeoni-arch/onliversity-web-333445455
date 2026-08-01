@@ -26,6 +26,7 @@ export const appInfo = {
   contentRating: "Everyone",
   containsAds: false,
   price: "Free first week · Paid after",
+  downloadUrl: "/downloads/ProSeasonAcademy-v1.0.0.apk",
   description: `ProSeasonAcademy is Mirror's professional development programme for FC Mobile players — the first programme built on the Mirror method, and the template for every future Onliversity course.
 
 The Mirror records the evidence. You do the seeing. Before each match you set an intention. At half-time and full-time you answer in your own words. You watch the versions of your thinking sit beside the recording — until self-deception becomes difficult to maintain.

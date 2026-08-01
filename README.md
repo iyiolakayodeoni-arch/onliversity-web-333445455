@@ -2,6 +2,17 @@
 
 Phase 0 scaffold, built from the Onliversity Full Briefing (Part 4) and the Pro Season Academy MVP Build Guide.
 
+## App downloads
+
+The app is distributed as a direct Android APK (not a store listing).
+
+- Put the signed APK at `public/downloads/ProSeasonAcademy-v1.0.0.apk` (the filename is read
+  from `downloadUrl` in `lib/app-data.ts`).
+- The `/download` page checks the file on load: when it exists, the download button goes
+  live automatically; when it doesn't, the page shows an honest "final build almost ready"
+  state with email capture, so the site never advertises a download that isn't there.
+
+
 **What's in this scaffold (Phase 0, Days 2–4):**
 - Next.js 14 (App Router) + TypeScript + Tailwind
 - Brand design tokens as CSS variables (`app/globals.css`, `tailwind.config.ts`) — phosphor green, deep charcoal, amber accent, per Briefing Part 2.2

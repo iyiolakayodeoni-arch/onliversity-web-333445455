@@ -24,8 +24,8 @@ function AppIcon({ size = 96 }: { size?: number }) {
   );
 }
 
-/* ─── Waitlist glyph — a ticket, not a download ─── */
-function WaitlistGlyph({ size = 44, className = "" }: { size?: number; className?: string }) {
+/* ─── Download glyph ─── */
+function DownloadGlyph({ size = 44, className = "" }: { size?: number; className?: string }) {
   return (
     <svg
       width={size}
@@ -39,10 +39,9 @@ function WaitlistGlyph({ size = 44, className = "" }: { size?: number; className
       className={className}
       aria-hidden="true"
     >
-      <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
-      <path d="M13 5v2" />
-      <path d="M13 11v2" />
-      <path d="M13 17v2" />
+      <path d="M12 3v11" />
+      <path d="M7.5 10.5L12 15l4.5-4.5" />
+      <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
     </svg>
   );
 }
@@ -160,19 +159,19 @@ export default function ProSeasonAcademyPage() {
               </div>
             </div>
 
-            {/* Waitlist — not a download */}
+            {/* Download icon — leads to the download page */}
             <div className="sm:ml-auto flex items-center gap-4">
               <Link
-                href="/signup"
-                aria-label="Join the ProSeasonAcademy waitlist"
-                title="Join the waitlist — we email you the app when your seat opens"
+                href="/download"
+                aria-label="Download ProSeasonAcademy"
+                title="Download ProSeasonAcademy — Android APK, first week free"
                 className="group relative flex h-20 w-20 items-center justify-center rounded-[24px] border border-primary/25 bg-primary/5 text-primary transition-all hover:border-primary/60 hover:bg-primary/10 hover:shadow-[0_0_40px_-8px_rgba(57,255,106,0.45)]"
               >
-                <WaitlistGlyph size={40} className="transition-transform duration-300 group-hover:translate-y-0.5" />
+                <DownloadGlyph size={40} className="transition-transform duration-300 group-hover:translate-y-0.5" />
                 <span className="absolute -inset-1 rounded-[28px] border border-primary/10" aria-hidden="true" />
               </Link>
               <div className="max-w-[180px]">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">Join the waitlist</p>
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">Download</p>
                 <p className="mt-1 text-xs text-muted leading-relaxed">
                   Season One · 1,000 seats · first week free
                 </p>
@@ -273,7 +272,7 @@ export default function ProSeasonAcademyPage() {
           <h2 className="font-display text-2xl font-bold text-foreground">See yourself. Do the work.</h2>
           <p className="mt-2 text-sm text-muted">Season One is live. 1,000 seats. One coach, locked permanently.</p>
           <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <Link href="/signup" className="shimmer rounded-lg bg-primary px-8 py-3 font-medium text-background transition-all hover:shadow-glow-sm">Join the waitlist</Link>
+            <Link href="/download" className="shimmer rounded-lg bg-primary px-8 py-3 font-medium text-background transition-all hover:shadow-glow-sm">Download the app</Link>
             <Link href="/" className="text-sm text-muted transition-colors hover:text-foreground">← Back to Onliversity</Link>
           </div>
         </div>

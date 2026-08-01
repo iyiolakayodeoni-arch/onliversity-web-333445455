@@ -38,10 +38,10 @@ export function Nav() {
             The app →
           </Link>
           <Link
-            href="/signup"
+            href="/download"
             className="cta-energy shimmer rounded-full bg-primary px-4 py-2 text-[13px] font-medium text-background hover:shadow-[0_0_22px_-4px_rgba(57,255,106,0.6)] transition-all"
           >
-            Join the waitlist
+            Download the app
           </Link>
         </div>
 
@@ -65,8 +65,8 @@ export function Nav() {
                 {l}
               </a>
             ))}
-            <Link href="/signup" onClick={() => setOpen(false)} className="mt-2 rounded-full bg-primary px-4 py-3 text-center text-sm font-medium text-background">
-              Join the waitlist
+            <Link href="/download" onClick={() => setOpen(false)} className="mt-2 rounded-full bg-primary px-4 py-3 text-center text-sm font-medium text-background">
+              Download the app
             </Link>
           </nav>
         </div>

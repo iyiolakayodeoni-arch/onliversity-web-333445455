@@ -85,16 +85,16 @@ export function MirrorExperiment() {
                 </p>
                 <p className="mt-3 text-[13px] leading-[1.7] text-muted">
                   Everything lives inside <strong className="text-foreground">ProSeasonAcademy</strong> —
-                  Baseline Week, your Journey, the Mirror Sessions. One seat starts the experiment
+                  Baseline Week, your Journey, the Mirror Sessions. One download starts the experiment
                   that starts everything else.
                 </p>
 
                 <div className="mt-7 flex flex-col gap-3">
                   <Link
-                    href="/signup"
+                    href="/download"
                     className="cta-energy shimmer rounded-xl bg-primary px-7 py-4 font-medium text-background transition-all hover:shadow-[0_0_30px_-6px_rgba(57,255,106,0.55)]"
                   >
-                    JOIN THE WAITLIST
+                    DOWNLOAD PROSEASONACADEMY
                   </Link>
                   <Link
                     href="/pro-season-academy"
