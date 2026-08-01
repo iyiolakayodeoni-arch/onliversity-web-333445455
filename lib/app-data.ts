@@ -13,8 +13,6 @@ export interface SeasonEntry {
   size: string;
   androidVersion: string;
   downloads: string;
-  rating: number;
-  ratingCount: number;
   highlights: string[];
   changelog: {
     category: string;
@@ -61,8 +59,6 @@ export const seasons: SeasonEntry[] = [
     size: "48 MB",
     androidVersion: "8.0+",
     downloads: "1,000+",
-    rating: 4.9,
-    ratingCount: 127,
     highlights: [
       "Choose your permanent coach — Chinedu or Obinna",
       "5-match Baseline Scan to start your journey",
