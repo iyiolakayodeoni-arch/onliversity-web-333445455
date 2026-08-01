@@ -19,11 +19,11 @@ export function MirrorExperiment() {
     },
     {
       t: "IT IS THE EXPERIMENT",
-      d: "Onliversity doesn't open ten courses and hope. We run one serious experiment first and watch the receipts before we build more.",
+      d: "Onliversity doesn't open ten courses and hope. We run one serious experiment first and watch the receipts before we move on.",
     },
     {
-      t: "YOUR SEAT OPENS THE REST",
-      d: "Every other course inherits this structure. Your Baseline Week, Journey, Mirror Sessions and Thread are the template the next path is built from.",
+      t: "YOUR SEAT OPENS SEASON TWO",
+      d: "Season One proves the method. Season Two turns it into tournament shape — the research, the preparation, the psychology. Your seat funds it.",
     },
   ];
 
@@ -55,7 +55,8 @@ export function MirrorExperiment() {
                 But make no mistake — <strong className="text-foreground">it is a proper product.</strong>{" "}
                 Not a beta, not a demo, not a teaser. It is fully built, priced, and capped, with real
                 coaching, real receipts and real support. We&apos;re just honest about the job it does: it
-                proves the method — and it pays for the courses we open next.
+                proves the method — and it funds{" "}
+                <strong className="text-foreground">Season Two, when we start preparing you for the tournaments.</strong>
               </p>
             </div>
 

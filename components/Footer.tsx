@@ -38,8 +38,7 @@ export function Footer() {
               <p className="font-mono text-[10px] uppercase tracking-widest text-muted mb-4">Product</p>
               <ul className="space-y-2.5 text-[13px] text-muted">
                 <li><a href="/pro-season-academy" className="hover:text-foreground">ProSeasonAcademy (Live)</a></li>
-                <li>Next paths (Coming soon)</li>
-                <li>One method · any craft</li>
+                <li>Season Two — tournament prep (Coming soon)</li>
               </ul>
             </div>
             <div>

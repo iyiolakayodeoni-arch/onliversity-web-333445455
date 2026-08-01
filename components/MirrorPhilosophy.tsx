@@ -41,21 +41,30 @@ export function MirrorPhilosophy() {
 
         <div className="mt-14 max-w-[760px] mx-auto space-y-5 text-[15px] sm:text-[16px] leading-[1.8] text-muted fade-up fade-up-delay-1">
           <p>
-            Mirror exists to give people structure — not to do their thinking for them.
-            Most people say they want a professional outcome while behaving casually every
-            day. They play without purpose. They don&apos;t review their decisions. They blame
-            the game, the lag, the opponent, the luck. They repeat the same behaviour and
-            call it bad luck.
+            Onliversity gives creatives one thing the internet never will:{" "}
+            <strong className="text-foreground">structure and discipline</strong>. Most people say
+            they want a professional outcome while behaving casually every day. They play without
+            purpose. They don&apos;t review their decisions. They blame the game, the lag, the
+            opponent, the luck. They repeat the same behaviour and call it bad luck.
+          </p>
+          <p>
+            We can build an AI to hand you all the data you want. But you will not learn the
+            lesson if you don&apos;t analyse it yourself. The data is the mirror. The analysis is
+            the change. So we give you that mirror — you see yourself — and we make it very hard
+            for you to lie to yourself, because the truth is placed beside your behaviour and{" "}
+            <strong className="text-foreground">reminded to you regularly</strong>.
           </p>
           <p>
             Mirror closes the gap between ambition and behaviour. It records the evidence,
-            preserves your own thinking, and places your intentions, your feelings, your
-            memory and the recording beside one another — until self-deception becomes
-            difficult to maintain.
+            preserves your own thinking, and places your intentions, your feelings, your memory
+            and the recording beside one another — until self-deception becomes difficult to
+            maintain.
           </p>
           <p>
             <strong className="text-foreground">Mirror does not accuse you of lying.</strong> It just
-            refuses to let you forget the sequence.
+            refuses to let you forget the sequence. We tell you that truth constantly throughout
+            your time with us —{" "}
+            <strong className="text-foreground">even after you eventually leave.</strong>
           </p>
         </div>
 
