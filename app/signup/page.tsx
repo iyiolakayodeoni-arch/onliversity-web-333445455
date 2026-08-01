@@ -14,20 +14,24 @@ export default function SignupPage() {
 
       <div className="flex-1 mx-auto w-full max-w-[560px] px-4 sm:px-6 py-16 sm:py-24">
         <div className="rounded-[24px] border border-border bg-surface p-8 sm:p-10">
-          <p className="mono-label mb-3">No sign-up here anymore</p>
+          <p className="mono-label mb-3">Waitlist · Season One</p>
           <h1 className="font-display text-[28px] font-bold leading-[0.95] tracking-tight">
-            Seat claiming happens inside the app.
+            JOIN THE WAITLIST.
           </h1>
           <p className="mt-4 text-[14px] leading-[1.6] text-muted">
-            We removed sign-up from the website on purpose. This site is just to tell our story and collect emails for honest updates.
+            Season One is live — 1,000 seats, one coach locked permanently. The app isn&apos;t
+            sold or hosted on this website, so we removed sign-up from here on purpose: this
+            site tells the story, and the app does the work.
             <br/><br/>
-            If you want to join ProSeasonAcademy, start your Baseline Week inside the Onliversity app — you’ll claim your seat and lock your coach there.
+            This page does one job — put you on the list. When a seat opens for you (or the
+            next wave opens), we email you the app and your seat invite. Your Baseline Week
+            starts inside ProSeasonAcademy, where you claim your seat and lock your coach.
             <br/><br/>
-            For now, drop your email below. We’ll ping you when things open. No spam.
+            No spam. No surprise payments. Unsubscribe anytime.
           </p>
 
           <div className="mt-8">
-            <EmailCapture />
+            <EmailCapture ctaLabel="Join the waitlist" />
           </div>
 
           <Link href="/" className="mt-6 inline-block text-sm text-muted hover:text-foreground">← Back to home</Link>

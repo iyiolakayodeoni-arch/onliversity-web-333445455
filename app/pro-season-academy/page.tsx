@@ -24,8 +24,8 @@ function AppIcon({ size = 96 }: { size?: number }) {
   );
 }
 
-/* ─── Download glyph — an icon, not a button ─── */
-function DownloadGlyph({ size = 44, className = "" }: { size?: number; className?: string }) {
+/* ─── Waitlist glyph — a ticket, not a download ─── */
+function WaitlistGlyph({ size = 44, className = "" }: { size?: number; className?: string }) {
   return (
     <svg
       width={size}
@@ -39,9 +39,10 @@ function DownloadGlyph({ size = 44, className = "" }: { size?: number; className
       className={className}
       aria-hidden="true"
     >
-      <path d="M12 3v11" />
-      <path d="M7.5 10.5L12 15l4.5-4.5" />
-      <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" />
+      <path d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z" />
+      <path d="M13 5v2" />
+      <path d="M13 11v2" />
+      <path d="M13 17v2" />
     </svg>
   );
 }
@@ -111,9 +112,9 @@ function SeasonCard({ season, isExpanded, onToggle }: { season: SeasonEntry; isE
           </div>
           <div className="mt-6 divider-glow" />
           <div className="mt-4 flex flex-wrap items-center gap-4 text-xs text-muted">
-            <span className="flex items-center gap-1">
-              <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
-              {season.downloads} downloads
+            <span className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rounded-full bg-primary pulse-dot" />
+              Season One · live
             </span>
             <span>{season.size} · Android {season.androidVersion}+</span>
           </div>
@@ -143,7 +144,7 @@ export default function ProSeasonAcademyPage() {
           <div className="mb-6 flex items-center gap-2 text-xs text-muted fade-up">
             <Link href="/" className="hover:text-foreground transition-colors">Onliversity</Link>
             <span>›</span>
-            <Link href="/#download" className="hover:text-foreground transition-colors">Apps</Link>
+            <Link href="/#app" className="hover:text-foreground transition-colors">Apps</Link>
             <span>›</span>
             <span className="text-foreground">ProSeasonAcademy</span>
           </div>
@@ -159,19 +160,19 @@ export default function ProSeasonAcademyPage() {
               </div>
             </div>
 
-            {/* Download icon — not a button */}
+            {/* Waitlist — not a download */}
             <div className="sm:ml-auto flex items-center gap-4">
               <Link
                 href="/signup"
-                aria-label="Download ProSeasonAcademy"
-                title="Download ProSeasonAcademy — start your Baseline Week"
+                aria-label="Join the ProSeasonAcademy waitlist"
+                title="Join the waitlist — we email you the app when your seat opens"
                 className="group relative flex h-20 w-20 items-center justify-center rounded-[24px] border border-primary/25 bg-primary/5 text-primary transition-all hover:border-primary/60 hover:bg-primary/10 hover:shadow-[0_0_40px_-8px_rgba(57,255,106,0.45)]"
               >
-                <DownloadGlyph size={40} className="transition-transform duration-300 group-hover:translate-y-0.5" />
+                <WaitlistGlyph size={40} className="transition-transform duration-300 group-hover:translate-y-0.5" />
                 <span className="absolute -inset-1 rounded-[28px] border border-primary/10" aria-hidden="true" />
               </Link>
               <div className="max-w-[180px]">
-                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">Download</p>
+                <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">Join the waitlist</p>
                 <p className="mt-1 text-xs text-muted leading-relaxed">
                   Season One · 1,000 seats · first week free
                 </p>
@@ -181,7 +182,7 @@ export default function ProSeasonAcademyPage() {
 
           {/* Facts row */}
           <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4 sm:gap-4 fade-up fade-up-delay-2">
-            <StatPill icon={<svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>} value={latestSeason.downloads} label="Downloads" />
+            <StatPill icon={<svg className="h-5 w-5" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5" /><circle cx="12" cy="12" r="4" fill="currentColor" className="pulse-dot" /></svg>} value="Live" label="Status" />
             <StatPill icon={<svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>} value={latestSeason.size} label="Size" />
             <StatPill icon={<svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>} value={`Android ${latestSeason.androidVersion}`} label="Version" />
             <StatPill icon={<svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5"><path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>} value="1,000" label="Seats" />
@@ -224,7 +225,7 @@ export default function ProSeasonAcademyPage() {
           <p className="text-sm text-muted leading-relaxed whitespace-pre-line">{appInfo.description}</p>
 
           <div className="mt-6 flex flex-wrap gap-2">
-            {["FC Mobile", "Mirror method", "Professional development", "One coach, locked", "Receipts, not promises", "14-day trial"].map((tag) => (
+            {["FC Mobile", "Mirror method", "Professional development", "One coach, locked", "Receipts, not promises", "First week free"].map((tag) => (
               <span key={tag} className="rounded-full border border-border px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-muted">{tag}</span>
             ))}
           </div>
@@ -272,7 +273,7 @@ export default function ProSeasonAcademyPage() {
           <h2 className="font-display text-2xl font-bold text-foreground">See yourself. Do the work.</h2>
           <p className="mt-2 text-sm text-muted">Season One is live. 1,000 seats. One coach, locked permanently.</p>
           <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            <Link href="/signup" className="shimmer rounded-lg bg-primary px-8 py-3 font-medium text-background transition-all hover:shadow-glow-sm">Start your Baseline Week</Link>
+            <Link href="/signup" className="shimmer rounded-lg bg-primary px-8 py-3 font-medium text-background transition-all hover:shadow-glow-sm">Join the waitlist</Link>
             <Link href="/" className="text-sm text-muted transition-colors hover:text-foreground">← Back to Onliversity</Link>
           </div>
         </div>

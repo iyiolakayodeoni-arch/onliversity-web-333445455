@@ -12,7 +12,6 @@ export interface SeasonEntry {
   isCurrent: boolean;
   size: string;
   androidVersion: string;
-  downloads: string;
   highlights: string[];
   changelog: {
     category: string;
@@ -25,9 +24,8 @@ export const appInfo = {
   developer: "Onliversity",
   category: "Education · Esports",
   contentRating: "Everyone",
-  installs: "1,000+",
   containsAds: false,
-  price: "14-day trial · Paid after",
+  price: "Free first week · Paid after",
   description: `ProSeasonAcademy is Mirror's professional development programme for FC Mobile players — the first programme built on the Mirror method, and the template for every future Onliversity course.
 
 The Mirror records the evidence. You do the seeing. Before each match you set an intention. At half-time and full-time you answer in your own words. You watch the versions of your thinking sit beside the recording — until self-deception becomes difficult to maintain.
@@ -36,7 +34,7 @@ Your journey is yours: six universal stages, moved forward only by your own matc
 
 The app never thinks for you. Raw match video stays on your phone and is never uploaded.
 
-Season One has 1,000 seats. 14-day trial, 3-day grace after expiry, refunds for time not used. When the season is full, new players join the waitlist.`,
+Season One has 1,000 seats. The first week is free — 3-day grace after expiry, refunds for time not used. When the season is full, new players join the waitlist.`,
   permissions: [
     "Network access",
     "Storage (match screenshots)",
@@ -58,7 +56,6 @@ export const seasons: SeasonEntry[] = [
     isCurrent: true,
     size: "48 MB",
     androidVersion: "8.0+",
-    downloads: "1,000+",
     highlights: [
       "Choose your permanent coach — Chinedu or Obinna",
       "5-match Baseline Scan to start your journey",

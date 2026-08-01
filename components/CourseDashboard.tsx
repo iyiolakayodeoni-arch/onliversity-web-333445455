@@ -107,10 +107,13 @@ export function CourseDashboard() {
         </div>
       </div>
 
-      {/* Launch Banner */}
-      <div className="mt-4 rounded-lg border border-accent/30 bg-accent/5 p-3 text-center sm:mt-6 sm:p-4">
-        <p className="font-mono text-[10px] uppercase tracking-widest text-accent sm:text-xs">App Launches January 1, 2027</p>
-        <p className="mt-1 text-xs text-muted sm:text-sm">Your dashboard will go live when the app launches.</p>
+      {/* Live banner */}
+      <div className="mt-4 rounded-lg border border-primary/25 bg-primary/5 p-3 text-center sm:mt-6 sm:p-4">
+        <p className="font-mono text-[10px] uppercase tracking-widest text-primary sm:text-xs">
+          <span className="inline-block h-1.5 w-1.5 rounded-full bg-primary pulse-dot align-middle mr-1.5" />
+          Season One · Live
+        </p>
+        <p className="mt-1 text-xs text-muted sm:text-sm">This is a preview of your dashboard — your real one fills with your own receipts inside the app.</p>
       </div>
 
       {/* Tab Navigation — scrollable on mobile */}
@@ -249,8 +252,8 @@ export function CourseDashboard() {
               ))}
             </div>
 
-            <div className="mt-4 rounded-lg border border-accent/30 bg-accent/5 p-3 text-center sm:mt-6 sm:p-4">
-              <p className="text-xs text-muted sm:text-sm">Season 1 begins January 1, 2027.</p>
+            <div className="mt-4 rounded-lg border border-primary/20 bg-primary/5 p-3 text-center sm:mt-6 sm:p-4">
+              <p className="text-xs text-muted sm:text-sm">Season One is live — the leaderboard fills as members log their receipts.</p>
             </div>
           </div>
         )}

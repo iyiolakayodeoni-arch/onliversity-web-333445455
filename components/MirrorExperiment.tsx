@@ -71,7 +71,7 @@ export function MirrorExperiment() {
             </div>
           </div>
 
-          {/* Download panel */}
+          {/* Waitlist panel */}
           <div className="lg:col-span-5">
             <div className="fade-up fade-up-delay-1 relative">
               <div className="absolute -inset-6 bg-[radial-gradient(ellipse_at_center,rgba(57,255,106,0.08),transparent_65%)] blur-2xl" />
@@ -85,22 +85,22 @@ export function MirrorExperiment() {
                 </p>
                 <p className="mt-3 text-[13px] leading-[1.7] text-muted">
                   Everything lives inside <strong className="text-foreground">ProSeasonAcademy</strong> —
-                  Baseline Week, your Journey, the Mirror Sessions. One download starts the experiment
+                  Baseline Week, your Journey, the Mirror Sessions. One seat starts the experiment
                   that starts everything else.
                 </p>
 
                 <div className="mt-7 flex flex-col gap-3">
                   <Link
-                    href="/pro-season-academy"
+                    href="/signup"
                     className="cta-energy shimmer rounded-xl bg-primary px-7 py-4 font-medium text-background transition-all hover:shadow-[0_0_30px_-6px_rgba(57,255,106,0.55)]"
                   >
-                    DOWNLOAD PROSEASONACADEMY
+                    JOIN THE WAITLIST
                   </Link>
                   <Link
                     href="/pro-season-academy"
                     className="rounded-xl border border-border bg-background/60 px-7 py-3.5 font-medium text-foreground transition-colors hover:border-primary/40"
                   >
-                    START YOUR BASELINE WEEK
+                    SEE THE APP
                   </Link>
                 </div>
 

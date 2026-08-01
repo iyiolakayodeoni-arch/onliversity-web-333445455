@@ -18,15 +18,16 @@ export function MirrorCta() {
           <span className="text-muted">NO EXCUSES.</span>
         </h2>
         <p className="fade-up fade-up-delay-2 mt-6 max-w-[560px] mx-auto text-[15px] leading-[1.7] text-muted">
-          Start your Baseline Week today. One coach. One road. One standard. The Mirror
-          does not think for you — and that is exactly the point.
+          Join the waitlist today. Your Baseline Week starts when your seat opens.
+          One coach. One road. One standard. The Mirror does not think for you — and
+          that is exactly the point.
         </p>
         <div className="fade-up fade-up-delay-3 mt-9 flex flex-col sm:flex-row items-center justify-center gap-3">
           <Link
-            href="/pro-season-academy"
+            href="/signup"
             className="cta-energy shimmer rounded-xl bg-primary px-8 py-4 font-medium text-background transition-all hover:shadow-[0_0_30px_-6px_rgba(57,255,106,0.55)]"
           >
-            START YOUR BASELINE WEEK
+            JOIN THE WAITLIST
           </Link>
           <a
             href="#faq"
