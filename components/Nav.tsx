@@ -45,7 +45,7 @@ export function Nav() {
           </Link>
         </div>
 
-        <button onClick={() => setOpen(!open)} className="md:hidden h-9 w-9 grid place-items-center rounded-full border border-border text-muted">
+        <button onClick={() => setOpen(!open)} className="md:hidden h-10 w-10 grid place-items-center rounded-full border border-border text-muted" aria-label="Toggle menu" aria-expanded={open}>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d={open ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} /></svg>
         </button>
       </div>

@@ -28,7 +28,7 @@ export function MirrorHero() {
               </span>
             </div>
 
-            <h1 className="fade-up fade-up-delay-1 font-display font-bold tracking-tight leading-[0.92] text-[42px] sm:text-[60px] lg:text-[72px]">
+            <h1 className="fade-up fade-up-delay-1 font-display font-bold tracking-tight leading-[0.92] text-[36px] sm:text-[60px] lg:text-[72px]">
               SEE YOURSELF.
               <br />
               <span className="text-muted">DO THE WORK.</span>
@@ -40,8 +40,7 @@ export function MirrorHero() {
               <strong className="text-foreground">One coach. One road. One standard. No excuses.</strong>
             </p>
 
-            <div className="fade-up fade-up-delay-3 mt-9 flex flex-col sm:flex-row items-stretch gap-3">
-              <Link
+            <div className="fade-up fade-up-delay-3 mt-9 flex flex-col sm:flex-row items-stretch gap-3">              <Link
                 href="/pro-season-academy"
                 className="cta-energy shimmer rounded-xl bg-primary px-7 py-4 text-center font-medium text-background transition-all hover:shadow-[0_0_30px_-6px_rgba(57,255,106,0.55)]"
               >
@@ -69,8 +68,8 @@ export function MirrorHero() {
             </div>
           </div>
 
-          {/* Right — reflective panel */}
-          <div className="fade-up fade-up-delay-2 hidden lg:flex justify-center">
+          {/* Right — reflective panel (visible on all screens; stacks under copy on phones) */}
+          <div className="fade-up fade-up-delay-2 flex justify-center">
             <div className="relative w-full max-w-[420px]">
               <div className="absolute -inset-8 bg-[radial-gradient(ellipse_at_center,rgba(57,255,106,0.07),transparent_65%)] blur-2xl" />
               <div className="hud-border relative rounded-[24px] border border-border bg-surface-elevated/60 backdrop-blur-xl overflow-hidden shadow-[0_40px_100px_-20px_rgba(0,0,0,0.7)]">

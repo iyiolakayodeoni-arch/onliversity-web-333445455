@@ -16,7 +16,6 @@ interface SessionArtProps {
   caption: string;
   logoBadge?: boolean;
   className?: string;
-  aspect?: string;
 }
 
 export function SessionArt({
@@ -26,7 +25,6 @@ export function SessionArt({
   caption,
   logoBadge = true,
   className = "",
-  aspect = "1408 / 768",
 }: SessionArtProps) {
   return (
     <figure
@@ -36,8 +34,7 @@ export function SessionArt({
         src={src}
         alt={alt}
         loading="lazy"
-        className="w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-        style={{ aspectRatio: aspect }}
+        className="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02] sm:aspect-[1408/768]"
       />
 
       {/* Bottom blend so the caption sits on a dark base */}
