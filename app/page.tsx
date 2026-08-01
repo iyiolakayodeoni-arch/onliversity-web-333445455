@@ -1,6 +1,7 @@
 import { Nav } from "@/components/Nav";
 import { MirrorHero } from "@/components/MirrorHero";
 import { Marquee } from "@/components/Marquee";
+import { MirrorExperiment } from "@/components/MirrorExperiment";
 import { MirrorPhilosophy } from "@/components/MirrorPhilosophy";
 import { MirrorMethod } from "@/components/MirrorMethod";
 import { MirrorProgramme } from "@/components/MirrorProgramme";
@@ -32,6 +33,7 @@ export default function Home() {
         />
       </div>
 
+      <MirrorExperiment />
       <MirrorPhilosophy />
       <MirrorMethod />
 
