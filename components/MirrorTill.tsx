@@ -21,8 +21,8 @@ export function MirrorTill() {
   ];
 
   const cards = [
-    { t: "14-DAY TRIAL", d: "Try before you pay." },
-    { t: "FULL REFUNDS", d: "Time not used = money back." },
+    { t: "FREE FIRST WEEK", d: "Not paid for one week — talk to your people, your squad, your students inside the app." },
+    { t: "OPEN TO DISCUSSION", d: "These numbers are a starting point. We'll set the final prices with the founding members." },
     { t: "1000 SEATS ONLY", d: "When Season One is full, it's full. That's the point." },
   ];
 
@@ -35,10 +35,12 @@ export function MirrorTill() {
             YOUR SEAT. <span className="text-muted">YOUR TERMS.</span>
           </h2>
           <p className="mt-6 max-w-[680px] text-[15px] sm:text-[16px] leading-[1.8] text-muted">
-            Pro Season is paid-only after the trial, because anything free is taken for
-            granted. <strong className="text-foreground">14-day trial.</strong>{" "}
-            <strong className="text-foreground">3-day grace</strong> after expiry.{" "}
-            <strong className="text-foreground">Refunds for time not used.</strong> Season One
+            Pro Season is paid-only after the first week, because anything free is taken for
+            granted. <strong className="text-foreground">The first week is free</strong> — not
+            paid — so you can get inside, talk to your people, and see for yourself before you
+            commit.{" "}
+            <strong className="text-foreground">3-day grace</strong> after expiry,{" "}
+            <strong className="text-foreground">refunds for time not used.</strong> Season One
             is capped at 1,000 seats — enforced by the database, not by a button. When the
             season is full, new players join the waitlist and can keep training solo in the
             meantime.
@@ -76,6 +78,15 @@ export function MirrorTill() {
               ))}
             </div>
           </div>
+        </div>
+
+        {/* Prices are a starting point — open to discussion */}
+        <div className="fade-up fade-up-delay-1 mt-6 rounded-[20px] border border-border bg-surface/40 px-6 sm:px-8 py-5 text-center">
+          <p className="text-[13px] sm:text-[14px] leading-[1.7] text-muted">
+            These figures are a <strong className="text-foreground">starting point — they can change.</strong>{" "}
+            We&apos;re open to discussion, and the final prices will be set with the founding
+            members before Season One opens.
+          </p>
         </div>
 
         {/* Subsidy line */}
