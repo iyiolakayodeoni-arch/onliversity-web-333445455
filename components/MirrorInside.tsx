@@ -1,5 +1,6 @@
 "use client";
 import { useScrollAnimation } from "./useScrollAnimation";
+import { SessionArt } from "./SessionArt";
 
 /**
  * INSIDE THE APP — WHAT A MEMBER GETS
@@ -65,6 +66,16 @@ export function MirrorInside() {
             Every tool exists for one reason: to place your own thinking beside the
             evidence until self-deception stops working.
           </p>
+        </div>
+
+        {/* A session, made visual */}
+        <div className="fade-up fade-up-delay-1 mb-12 max-w-[820px]">
+          <SessionArt
+            src="/illustrations/mirror-session.webp"
+            alt="A player watching his own reflection in a glowing mirror while holding his phone mid-session"
+            label="mirror / session — how it looks"
+            caption="Intention → checkpoints → your key moments → comparison → one sworn lesson."
+          />
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">

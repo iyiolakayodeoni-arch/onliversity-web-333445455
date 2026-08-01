@@ -1,5 +1,6 @@
 "use client";
 import { useScrollAnimation } from "./useScrollAnimation";
+import { SessionArt } from "./SessionArt";
 
 /**
  * THE PHILOSOPHY — WHY MIRROR EXISTS
@@ -66,6 +67,16 @@ export function MirrorPhilosophy() {
             your time with us —{" "}
             <strong className="text-foreground">even after you eventually leave.</strong>
           </p>
+        </div>
+
+        {/* The mirror, made visual — a player seeing himself */}
+        <div className="fade-up fade-up-delay-1 mt-14 max-w-[900px] mx-auto">
+          <SessionArt
+            src="/illustrations/player-mirror.webp"
+            alt="A player sitting in a dark room, holding his phone, facing a glowing mirror that reflects himself"
+            label="see yourself · baseline"
+            caption="The data is the mirror. The analysis is the change."
+          />
         </div>
 
         {/* Pull quote */}
