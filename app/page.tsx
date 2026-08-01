@@ -1,54 +1,62 @@
 import { Nav } from "@/components/Nav";
-import { HeroNew } from "@/components/HeroNew";
+import { MirrorHero } from "@/components/MirrorHero";
 import { Marquee } from "@/components/Marquee";
-import { StorySection } from "@/components/StorySection";
-import { ProductSection } from "@/components/ProductSection";
-import { AcademyBento } from "@/components/AcademyBento";
-import { RoadmapSection } from "@/components/RoadmapSection";
-import { TrustSection } from "@/components/TrustSection";
+import { MirrorExperiment } from "@/components/MirrorExperiment";
+import { MirrorPhilosophy } from "@/components/MirrorPhilosophy";
+import { MirrorMethod } from "@/components/MirrorMethod";
+import { MirrorProgramme } from "@/components/MirrorProgramme";
+import { MirrorInside } from "@/components/MirrorInside";
+import { MirrorTill } from "@/components/MirrorTill";
+import { MirrorWhyDifferent } from "@/components/MirrorWhyDifferent";
+import { MirrorPlatform } from "@/components/MirrorPlatform";
+import { MirrorFaq } from "@/components/MirrorFaq";
+import { MirrorCta } from "@/components/MirrorCta";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen">
       <Nav />
-      <HeroNew />
+      <MirrorHero />
 
-      <div className="relative border-b border-border/60 bg-surface/40 py-2">
+      <div className="relative border-b border-border/60 py-2">
         <Marquee
           items={[
-            "Pro Season Academy • Season One LIVE",
-            "6 stages from grassroots to champion",
-            "Real coaches • Real journeys",
-            "Match Vault + Loss Journal",
-            "Earn XP • Unlock badges • Get certified",
-            "No fake data • Honor-system logging",
-            "1000 seats • Founder in The Halls",
+            "Mirror · ProSeasonAcademy",
+            "The first programme · ProSeasonAcademy",
+            "1,000 seats only",
+            "One coach · locked permanently",
+            "Your journey is the evidence",
+            "The Standard is the benchmark",
+            "The Mirror does not think for you",
           ]}
         />
       </div>
 
-      <StorySection />
-      <ProductSection />
+      <MirrorExperiment />
+      <MirrorPhilosophy />
+      <MirrorMethod />
 
-      <div className="relative border-y border-border/60 bg-surface/40 py-2">
+      <div className="relative border-y border-border/60 py-2">
         <Marquee
           reverse
           speed="fast"
           items={[
-            "Film Room • 4-7 min sessions",
-            "Stage 1 Grassroots → Stage 6 Champion Mind",
-            "Chinedu 'The King' • Obinna 'Tekkerz'",
-            "Composure • Decision loops • Mechanic mastery",
-            "Pass the scan • Bank the XP",
-            "Pro Season Certified • 80/20 partner split",
+            "SEE YOURSELF → CONTROL YOURSELF → READ THE GAME → BUILD DISCIPLINE → PERFORM UNDER PRESSURE → PROVE IT",
+            "Evidence before advice",
+            "Progress is earned from receipts",
+            "Baseline week → journey → mirror session → thread",
           ]}
         />
       </div>
 
-      <AcademyBento />
-      <RoadmapSection />
-      <TrustSection />
+      <MirrorProgramme />
+      <MirrorInside />
+      <MirrorTill />
+      <MirrorWhyDifferent />
+      <MirrorPlatform />
+      <MirrorFaq />
+      <MirrorCta />
       <Footer />
     </main>
   );

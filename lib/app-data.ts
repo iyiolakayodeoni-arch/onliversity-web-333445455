@@ -1,5 +1,5 @@
 /**
- * Pro Season Academy — Season-based versioning & changelog
+ * ProSeasonAcademy — Season-based versioning & changelog
  * "Seasons" replace traditional version numbers.
  * Season 1 is the founding season. Each new season = a major app update.
  */
@@ -23,20 +23,22 @@ export interface SeasonEntry {
 }
 
 export const appInfo = {
-  name: "Pro Season Academy",
+  name: "ProSeasonAcademy",
   developer: "Onliversity",
   category: "Education · Esports",
   contentRating: "Everyone",
   installs: "1,000+",
   containsAds: false,
-  price: "Free (Founder's Week)",
-  description: `Pro Season Academy is a private FC Mobile performance academy inside the Onliversity ecosystem.
+  price: "14-day trial · Paid after",
+  description: `ProSeasonAcademy is Mirror's professional development programme for FC Mobile players — the first programme built on the Mirror method, and the template for every future Onliversity course.
 
-Choose one permanent coach. Walk their real journey from grassroots to championship — 6 stages, one path. Log real FC Mobile matches in the Match Vault. Reflect through The Eye and The Mind Match Scan. Track patterns in the Loss Journal.
+The Mirror records the evidence. You do the seeing. Before each match you set an intention. At half-time and full-time you answer in your own words. You watch the versions of your thinking sit beside the recording — until self-deception becomes difficult to maintain.
 
-This is not a public tips app or a content library. It's a serious, personal football academy where invited players train under a chosen coach, reflect on real matches, prove progress through structured scans, and improve inside a serious community.
+Your journey is yours: six universal stages, moved forward only by your own matches, answers and receipts. One coach, locked permanently. One standard. No excuses.
 
-Season One has 1,000 seats. Founder's Week is active — use the academy for free and help shape it before paid access begins.`,
+The app never thinks for you. Raw match video stays on your phone and is never uploaded.
+
+Season One has 1,000 seats. 14-day trial, 3-day grace after expiry, refunds for time not used. When the season is full, new players join the waitlist.`,
   permissions: [
     "Network access",
     "Storage (match screenshots)",
@@ -77,7 +79,7 @@ export const seasons: SeasonEntry[] = [
       {
         category: "Launch",
         items: [
-          "Season One is live — the founding season of Pro Season Academy",
+          "Season One is live — the founding season of ProSeasonAcademy",
           "1,000 seats available during Founder's Week",
           "Two coaches with distinct worlds, voices, and journey paths",
           "Full 6-stage journey with objectives, locks, and XP",

@@ -14,16 +14,17 @@ export function Nav() {
           </span>
           <span className="font-display font-bold tracking-tight text-[15px]">ONLIVERSITY</span>
           <span className="hidden sm:inline-flex ml-2 rounded-full border border-primary/20 bg-primary/10 px-2.5 py-0.5 font-mono text-[9px] uppercase tracking-widest text-primary">
-            Esports × Academy
+            Mirror · ProSeasonAcademy
           </span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
           {[
-            ["Story", "#story"],
-            ["Product", "#product"],
+            ["Philosophy", "#philosophy"],
+            ["Method", "#method"],
+            ["Programme", "#programme"],
             ["Inside", "#inside"],
-            ["Future", "#future"],
+            ["Pricing", "#till"],
           ].map(([label, href]) => (
             <a key={label} href={href} className="group relative text-[13px] text-muted hover:text-foreground transition-colors">
               {label}
@@ -33,9 +34,14 @@ export function Nav() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="#updates" className="text-[13px] text-muted hover:text-foreground transition-colors">Get updates →</a>
-          <Link href="/pro-season-academy" className="cta-energy shimmer rounded-full bg-primary px-4 py-2 text-[13px] font-medium text-background hover:shadow-[0_0_22px_-4px_rgba(57,255,106,0.6)] transition-all">
-            Download App
+          <Link href="/pro-season-academy" className="text-[13px] text-muted hover:text-foreground transition-colors">
+            The app →
+          </Link>
+          <Link
+            href="/pro-season-academy"
+            className="cta-energy shimmer rounded-full bg-primary px-4 py-2 text-[13px] font-medium text-background hover:shadow-[0_0_22px_-4px_rgba(57,255,106,0.6)] transition-all"
+          >
+            Start Baseline Week
           </Link>
         </div>
 
@@ -48,17 +54,20 @@ export function Nav() {
         <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-xl px-4 py-4">
           <nav className="flex flex-col gap-1">
             {[
-              ["Our story", "#story"],
-              ["The product", "#product"],
+              ["Philosophy", "#philosophy"],
+              ["Method", "#method"],
+              ["Programme", "#programme"],
               ["Inside the academy", "#inside"],
-              ["Future roadmap", "#future"],
-              ["Get updates", "#updates"],
-            ].map(([l,h]) => (
-              <a key={l} href={h} onClick={()=>setOpen(false)} className="rounded-xl px-3 py-3 text-sm text-muted hover:bg-surface hover:text-foreground">
+              ["Pricing", "#till"],
+              ["FAQ", "#faq"],
+            ].map(([l, h]) => (
+              <a key={l} href={h} onClick={() => setOpen(false)} className="rounded-xl px-3 py-3 text-sm text-muted hover:bg-surface hover:text-foreground">
                 {l}
               </a>
             ))}
-            <Link href="/pro-season-academy" onClick={()=>setOpen(false)} className="mt-2 rounded-full bg-primary px-4 py-3 text-center text-sm font-medium text-background">Download App</Link>
+            <Link href="/pro-season-academy" onClick={() => setOpen(false)} className="mt-2 rounded-full bg-primary px-4 py-3 text-center text-sm font-medium text-background">
+              Start Baseline Week
+            </Link>
           </nav>
         </div>
       )}
