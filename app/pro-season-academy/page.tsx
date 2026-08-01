@@ -276,7 +276,7 @@ export default function ProSeasonAcademyPage() {
             <span>›</span>
             <Link href="/#download" className="hover:text-foreground transition-colors">Apps</Link>
             <span>›</span>
-            <span className="text-foreground">Pro Season · FC Mobile Pro</span>
+            <span className="text-foreground">ProSeasonAcademy</span>
           </div>
 
           {/* App header */}
@@ -314,7 +314,7 @@ export default function ProSeasonAcademyPage() {
 
           {/* Download button */}
           <div className="mt-6 flex flex-col gap-3 sm:flex-row fade-up fade-up-delay-3">
-            <Link href="/signup" className="shimmer flex-1 rounded-xl bg-primary px-6 py-3.5 text-center font-medium text-background text-base transition-all hover:shadow-glow-sm">Start your Baseline Week — 14-day trial</Link>
+            <Link href="/signup" className="shimmer flex-1 rounded-xl bg-primary px-6 py-3.5 text-center font-medium text-background text-base transition-all hover:shadow-glow-sm">Download ProSeasonAcademy — start your Baseline Week</Link>
             <button className="flex items-center justify-center gap-2 rounded-xl border border-border px-6 py-3.5 text-sm text-foreground transition-colors hover:border-primary/30">
               <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
               Add to wishlist

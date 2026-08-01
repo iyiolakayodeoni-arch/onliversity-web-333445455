@@ -23,7 +23,7 @@ export interface SeasonEntry {
 }
 
 export const appInfo = {
-  name: "Pro Season — FC Mobile Pro",
+  name: "ProSeasonAcademy",
   developer: "Onliversity",
   category: "Education · Esports",
   contentRating: "Everyone",

@@ -51,7 +51,7 @@ export default function DashboardPage() {
           <div className="mb-2 flex items-center justify-center gap-2">
             <span className="h-2 w-2 rounded-full bg-primary pulse-dot" />
             <p className="font-mono text-[10px] uppercase tracking-widest text-primary">
-              App Preview — Pro Season · FC Mobile Pro
+              App Preview — ProSeasonAcademy
             </p>
           </div>
           <p className="text-sm text-muted">
