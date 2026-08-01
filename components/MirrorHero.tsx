@@ -4,7 +4,7 @@ import { useScrollAnimation } from "./useScrollAnimation";
 import { Logo } from "./Logo";
 
 /**
- * HERO — MIRROR · PRO SEASON
+ * HERO — MIRROR · PROSEASONACADEMY
  * SEE YOURSELF. DO THE WORK.
  * Moved-to-mirror aesthetic: restrained, reflective, no noise.
  */
@@ -24,7 +24,7 @@ export function MirrorHero() {
             <div className="fade-up flex items-center gap-3 mb-7">
               <Logo size={30} />
               <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-primary">
-                Mirror · Pro Season
+                Mirror · ProSeasonAcademy
               </span>
             </div>
 
@@ -35,7 +35,7 @@ export function MirrorHero() {
             </h1>
 
             <p className="fade-up fade-up-delay-2 mt-7 max-w-[560px] text-[15px] sm:text-[17px] leading-[1.7] text-muted">
-              Pro Season is Mirror&apos;s professional development programme for FC Mobile
+              ProSeasonAcademy is Mirror&apos;s professional development programme for FC Mobile
               players who want their behaviour to match their ambition.{" "}
               <strong className="text-foreground">One coach. One road. One standard. No excuses.</strong>
             </p>

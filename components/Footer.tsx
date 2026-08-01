@@ -12,9 +12,8 @@ export function Footer() {
               <span className="font-display font-bold">ONLIVERSITY</span>
             </div>
             <p className="mt-4 max-w-[400px] text-[13px] leading-[1.6] text-muted">
-              Mirror is the method. Pro Season is the first programme. FC Mobile Pro is its
-              first specialist path — and the template every future Onliversity course is
-              built from.
+              Mirror is the method. ProSeasonAcademy is the first programme — and the template
+              every future Onliversity course is built from.
             </p>
             <div className="mt-6 space-y-2 font-mono text-[10px] uppercase tracking-[0.18em] text-muted/70">
               <p>YOUR ROAD. THE STANDARD. NO EXCUSES.</p>
@@ -38,7 +37,7 @@ export function Footer() {
             <div>
               <p className="font-mono text-[10px] uppercase tracking-widest text-muted mb-4">Product</p>
               <ul className="space-y-2.5 text-[13px] text-muted">
-                <li><a href="/pro-season-academy" className="hover:text-foreground">Pro Season · FC Mobile Pro (Live)</a></li>
+                <li><a href="/pro-season-academy" className="hover:text-foreground">ProSeasonAcademy (Live)</a></li>
                 <li>Next paths (Coming soon)</li>
                 <li>One method · any craft</li>
               </ul>
@@ -57,11 +56,11 @@ export function Footer() {
 
         <div className="mt-14 pt-8 border-t border-border/60 flex flex-col items-center gap-4 text-center">
           <p className="font-mono text-[10px] uppercase tracking-widest text-muted/70">
-            © 2026 Onliversity · Mirror · Pro Season — an Onliversity programme
+            © 2026 Onliversity · Mirror · ProSeasonAcademy — an Onliversity programme
           </p>
           <p className="max-w-[760px] text-[11px] leading-relaxed text-muted/60">
-            FC Mobile Pro is the first path. Pro Season is a development programme, not a
-            gaming service, and is not affiliated with or endorsed by EA Sports or FC Mobile.
+            ProSeasonAcademy is a development programme, not a gaming service, and is not
+            affiliated with or endorsed by EA Sports or FC Mobile.
           </p>
         </div>
       </div>

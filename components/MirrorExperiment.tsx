@@ -5,7 +5,7 @@ import { useScrollAnimation } from "./useScrollAnimation";
 /**
  * THE EXPERIMENT — THE APP IS THE MAIN THING
  *
- * Positions FC Mobile Pro as the experiment that proves the Mirror method
+ * Positions ProSeasonAcademy as the experiment that proves the Mirror method
  * and properly starts every other Onliversity course — while making clear
  * it is a real, proper product, not a beta or a test.
  */
@@ -48,8 +48,8 @@ export function MirrorExperiment() {
             <div className="fade-up fade-up-delay-1 mt-6 max-w-[620px] space-y-4 text-[15px] sm:text-[16px] leading-[1.8] text-muted">
               <p>
                 Onliversity doesn&apos;t open ten courses and hope something sticks. We run{" "}
-                <strong className="text-foreground">one serious experiment first</strong>: FC Mobile
-                Pro, built on the Mirror method. It is the proving ground for the whole platform.
+                <strong className="text-foreground">one serious experiment first</strong>: ProSeasonAcademy,
+                built on the Mirror method. It is the proving ground for the whole platform.
               </p>
               <p>
                 But make no mistake — <strong className="text-foreground">it is a proper product.</strong>{" "}

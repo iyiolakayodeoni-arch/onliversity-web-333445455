@@ -35,7 +35,7 @@ export function MirrorTill() {
             YOUR SEAT. <span className="text-muted">YOUR TERMS.</span>
           </h2>
           <p className="mt-6 max-w-[680px] text-[15px] sm:text-[16px] leading-[1.8] text-muted">
-            Pro Season is paid-only after the first week, because anything free is taken for
+            ProSeasonAcademy is paid-only after the first week, because anything free is taken for
             granted. <strong className="text-foreground">The first week is free</strong> — not
             paid — so you can get inside, talk to your people, and see for yourself before you
             commit.{" "}

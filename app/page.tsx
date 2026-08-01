@@ -22,8 +22,8 @@ export default function Home() {
       <div className="relative border-b border-border/60 py-2">
         <Marquee
           items={[
-            "Mirror · Pro Season",
-            "The first programme · FC Mobile Pro",
+            "Mirror · ProSeasonAcademy",
+            "The first programme · ProSeasonAcademy",
             "1,000 seats only",
             "One coach · locked permanently",
             "Your journey is the evidence",

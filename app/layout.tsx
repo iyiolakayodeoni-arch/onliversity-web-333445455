@@ -4,9 +4,9 @@ import { AnimatedBackground } from "@/components/AnimatedBackground";
 import { BootScreen } from "@/components/BootScreen";
 
 export const metadata: Metadata = {
-  title: "Onliversity — Mirror · Pro Season · See Yourself. Do the Work.",
+  title: "Onliversity — Mirror · ProSeasonAcademy · See Yourself. Do the Work.",
   description:
-    "Mirror is the method. Pro Season is the first programme — a professional development programme for FC Mobile players. One coach. One road. One standard. No excuses. The Mirror does not think for you.",
+    "Mirror is the method. ProSeasonAcademy is the first programme — a professional development programme for FC Mobile players. One coach. One road. One standard. No excuses. The Mirror does not think for you.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

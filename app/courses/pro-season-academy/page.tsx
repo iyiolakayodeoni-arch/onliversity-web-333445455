@@ -19,10 +19,10 @@ export default function ProSeasonAcademyPage() {
             <Logo size={56} />
           </div>
           <p className="font-mono text-xs uppercase tracking-[0.25em] text-primary">
-            Mirror · Pro Season — the first programme
+            Mirror · ProSeasonAcademy — the first programme
           </p>
           <h1 className="mt-4 font-display text-4xl font-bold tracking-tight md:text-5xl">
-            Pro Season · FC Mobile Pro
+            ProSeasonAcademy
           </h1>
           <p className="mx-auto mt-5 max-w-lg text-muted">
             Mirror&apos;s professional development programme for FC Mobile players who want

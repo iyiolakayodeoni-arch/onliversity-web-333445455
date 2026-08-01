@@ -1,5 +1,5 @@
 /**
- * Pro Season Academy — Season-based versioning & changelog
+ * ProSeasonAcademy — Season-based versioning & changelog
  * "Seasons" replace traditional version numbers.
  * Season 1 is the founding season. Each new season = a major app update.
  */
@@ -30,7 +30,7 @@ export const appInfo = {
   installs: "1,000+",
   containsAds: false,
   price: "14-day trial · Paid after",
-  description: `Pro Season is Mirror's professional development programme for FC Mobile players — the first programme built on the Mirror method, and the template for every future Onliversity course.
+  description: `ProSeasonAcademy is Mirror's professional development programme for FC Mobile players — the first programme built on the Mirror method, and the template for every future Onliversity course.
 
 The Mirror records the evidence. You do the seeing. Before each match you set an intention. At half-time and full-time you answer in your own words. You watch the versions of your thinking sit beside the recording — until self-deception becomes difficult to maintain.
 
@@ -79,7 +79,7 @@ export const seasons: SeasonEntry[] = [
       {
         category: "Launch",
         items: [
-          "Season One is live — the founding season of Pro Season Academy",
+          "Season One is live — the founding season of ProSeasonAcademy",
           "1,000 seats available during Founder's Week",
           "Two coaches with distinct worlds, voices, and journey paths",
           "Full 6-stage journey with objectives, locks, and XP",

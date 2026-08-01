@@ -3,7 +3,7 @@ import { useScrollAnimation } from "./useScrollAnimation";
 
 /**
  * THE PLATFORM — MORE THAN ONE GAME
- * Pro Season is the template every future Onliversity course is built from.
+ * ProSeasonAcademy is the template every future Onliversity course is built from.
  */
 export function MirrorPlatform() {
   const ref = useScrollAnimation(0.08);
@@ -20,14 +20,14 @@ export function MirrorPlatform() {
             ONE METHOD. <span className="text-muted">ANY CRAFT.</span>
           </h2>
           <p className="mt-6 max-w-[720px] mx-auto text-[15px] sm:text-[16px] leading-[1.8] text-muted">
-            Pro Season is the proof. The Mirror method was built to travel. Any serious
+            ProSeasonAcademy is the proof. The Mirror method was built to travel. Any serious
             pursuit — {crafts.join(", ")} — runs on the same engine: record the evidence,
             preserve your own thinking, place intention beside outcome, and make
             self-deception difficult to maintain.{" "}
             <strong className="text-foreground">The coach changes. The craft changes. The structure stays.</strong>
           </p>
           <p className="mt-4 text-[14px] leading-[1.7] text-foreground/85">
-            If Pro Season can make FC Mobile players behave like professionals, imagine what
+            If ProSeasonAcademy can make FC Mobile players behave like professionals, imagine what
             it does for the rest of your ambitions.
           </p>
         </div>
@@ -39,7 +39,7 @@ export function MirrorPlatform() {
               The first programme — live now
             </p>
             <p className="font-display font-bold text-[22px] tracking-tight">
-              PRO SEASON · FC MOBILE PRO
+              PROSEASONACADEMY
             </p>
             <p className="mt-3 text-[14px] leading-[1.7] text-muted">
               Season One is open. 1,000 seats. One road, one standard, no excuses.

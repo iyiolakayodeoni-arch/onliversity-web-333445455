@@ -14,7 +14,7 @@ export function Nav() {
           </span>
           <span className="font-display font-bold tracking-tight text-[15px]">ONLIVERSITY</span>
           <span className="hidden sm:inline-flex ml-2 rounded-full border border-primary/20 bg-primary/10 px-2.5 py-0.5 font-mono text-[9px] uppercase tracking-widest text-primary">
-            Mirror · Pro Season
+            Mirror · ProSeasonAcademy
           </span>
         </Link>
 

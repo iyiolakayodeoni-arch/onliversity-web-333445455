@@ -2,7 +2,7 @@
 import { useScrollAnimation } from "./useScrollAnimation";
 
 /**
- * THE FIRST PROGRAMME — PRO SEASON · FC MOBILE PRO
+ * THE FIRST PROGRAMME — PROSEASONACADEMY
  */
 export function MirrorProgramme() {
   const ref = useScrollAnimation(0.08);
@@ -52,10 +52,10 @@ export function MirrorProgramme() {
           <h2 className="font-display font-bold tracking-tight leading-[0.95] text-[30px] sm:text-[46px]">
             THE FIRST PROGRAMME:
             <br />
-            <span className="text-primary">FC MOBILE PRO</span>
+            <span className="text-primary">PROSEASONACADEMY</span>
           </h2>
           <p className="mt-6 max-w-[680px] text-[15px] sm:text-[16px] leading-[1.8] text-muted">
-            Pro Season is Mirror&apos;s professional development programme for FC Mobile
+            ProSeasonAcademy is Mirror&apos;s professional development programme for FC Mobile
             players. It is the first course built on the Mirror method — and the template
             for every course Onliversity will ever run.{" "}
             <strong className="text-foreground">

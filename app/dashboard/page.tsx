@@ -55,14 +55,14 @@ export default function DashboardPage() {
             </p>
           </div>
           <p className="text-sm text-muted">
-            This is a preview of your Journey inside the app. Pro Season is Mirror&apos;s professional development programme for FC Mobile players — your actual programme lives in the Onliversity app. Start your Baseline Week to begin.
+            This is a preview of your Journey inside the app. ProSeasonAcademy is Mirror&apos;s professional development programme for FC Mobile players — your actual programme lives in the Onliversity app. Start your Baseline Week to begin.
           </p>
         </div>
 
         {/* Rank & Season Progress — gamified HUD */}
         <RankProgressCard />
 
-        {/* Pro Season Academy Branding */}
+        {/* ProSeasonAcademy Branding */}
         <div className="relative mb-8 overflow-hidden rounded-lg border border-border bg-surface-elevated/50 p-6">
           <PitchPattern />
           <div className="glow-primary pointer-events-none absolute inset-0" />
@@ -78,7 +78,7 @@ export default function DashboardPage() {
                   </span>
                 </div>
                 <h1 className="font-display text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                  Pro Season · FC Mobile Pro
+                  ProSeasonAcademy
                 </h1>
                 <p className="mt-1 text-sm text-muted sm:text-base">
                   One coach. One road. One standard. No excuses.
@@ -178,7 +178,7 @@ export default function DashboardPage() {
             Ready to start for real?
           </h3>
           <p className="mt-2 text-sm text-muted">
-            Download the Onliversity app to begin your Pro Season · FC Mobile Pro journey.
+            Download the Onliversity app to begin your ProSeasonAcademy journey.
           </p>
           <div className="mt-4 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
