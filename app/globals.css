@@ -25,8 +25,8 @@
   --glass-blur: 16px;
 }
 
-html { scroll-behavior: smooth; overflow-x: hidden; scroll-padding-top: 84px; -webkit-tap-highlight-color: transparent; }
-body { background: var(--color-background); color: var(--color-foreground); font-feature-settings: "ss01","ss02","cv01","cv02"; overflow-x: hidden; }
+html { scroll-behavior: smooth; overflow-x: hidden; scroll-padding-top: 84px; -webkit-tap-highlight-color: transparent; height: 100%; }
+body { background: var(--color-background); color: var(--color-foreground); font-feature-settings: "ss01","ss02","cv01","cv02"; overflow-x: hidden; min-height: 100dvh; }
 
 /* ─── Mobile comfort ─── */
 @media (max-width: 640px) {

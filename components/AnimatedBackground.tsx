@@ -37,17 +37,58 @@ export function AnimatedBackground() {
   );
 
   return (
-    <div aria-hidden className="fixed inset-0 -z-10 overflow-hidden bg-background pointer-events-none">
-      {/* Moving arena grid */}
-      <div className="absolute inset-0 arena-grid opacity-50" />
+    <div
+      aria-hidden
+      className="fixed inset-0 -z-10 overflow-hidden pointer-events-none"
+      style={{
+        background:
+          "radial-gradient(1200px 800px at 50% 40%, rgba(14,40,22,0.45) 0%, rgba(7,13,9,0.85) 55%, #05080a 100%)",
+      }}
+    >
+      {/* Moving arena grid — covers the FULL viewport (inset-0) without hard-coded sizes */}
+      <div
+        className="absolute arena-grid"
+        style={{ inset: "-10%" /* bleed past edges so drift never shows a seam */, opacity: 0.45 }}
+      />
 
-      {/* Drifting aurora energy orbs */}
-      <div className="aurora-a absolute -top-32 -left-24 h-[520px] w-[520px] rounded-full blur-[120px]"
-           style={{ background: "radial-gradient(circle, rgba(57,255,106,0.16), transparent 65%)" }} />
-      <div className="aurora-b absolute top-1/3 -right-32 h-[560px] w-[560px] rounded-full blur-[130px]"
-           style={{ background: "radial-gradient(circle, rgba(160,107,255,0.13), transparent 65%)" }} />
-      <div className="aurora-c absolute -bottom-40 left-1/4 h-[480px] w-[480px] rounded-full blur-[120px]"
-           style={{ background: "radial-gradient(circle, rgba(33,230,193,0.12), transparent 65%)" }} />
+      {/* Drifting aurora energy orbs — viewport-sized with vw min() so they
+          NEVER get vertically cropped on short mobile screens. */}
+      <div
+        className="aurora-a absolute"
+        style={{
+          top: "-18%",
+          left: "-12%",
+          width: "min(900px, 90vw)",
+          height: "min(900px, 90vw)",
+          borderRadius: "9999px",
+          filter: "blur(140px)",
+          background: "radial-gradient(circle, rgba(57,255,106,0.18), transparent 65%)",
+        }}
+      />
+      <div
+        className="aurora-b absolute"
+        style={{
+          top: "8%",
+          right: "-18%",
+          width: "min(900px, 90vw)",
+          height: "min(900px, 90vw)",
+          borderRadius: "9999px",
+          filter: "blur(150px)",
+          background: "radial-gradient(circle, rgba(160,107,255,0.15), transparent 65%)",
+        }}
+      />
+      <div
+        className="aurora-c absolute"
+        style={{
+          bottom: "-20%",
+          left: "18%",
+          width: "min(820px, 85vw)",
+          height: "min(820px, 85vw)",
+          borderRadius: "9999px",
+          filter: "blur(140px)",
+          background: "radial-gradient(circle, rgba(33,230,193,0.14), transparent 65%)",
+        }}
+      />
 
       {/* Rising particle field */}
       {particles.map((p) => (
@@ -68,9 +109,15 @@ export function AnimatedBackground() {
         />
       ))}
 
-      {/* Top + bottom vignette to keep content legible */}
-      <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-background to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background to-transparent" />
+      {/* Top + bottom vignette to keep content legible — sized in vh so they never crop */}
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0"
+        style={{ height: "35vh", background: "linear-gradient(to bottom, #05080a, transparent)" }}
+      />
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0"
+        style={{ height: "40vh", background: "linear-gradient(to top, #05080a, transparent)" }}
+      />
     </div>
   );
 }
